@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract background with blue and purple gradients.",
+      "imageUrl": "https://images.unsplash.com/photo-1604076913837-52ab5629fba9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGdyYWRpZW50fGVufDB8fHx8MTc2MzIyNzkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract gradient"
+    },
+    {
+      "id": "app-icon-1",
+      "description": "Icon for a productivity app.",
+      "imageUrl": "https://images.unsplash.com/photo-1611162618828-bc409f073cbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcHAlMjBpY29ufGVufDB8fHx8MTc2MzI3MzAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app icon"
+    },
+    {
+      "id": "app-icon-2",
+      "description": "Icon for a social media app.",
+      "imageUrl": "https://images.unsplash.com/photo-1737619285967-f3e96858b7af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXBwJTIwaWNvbnxlbnwwfHx8fDE3NjMyNzMwMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app icon"
+    },
+    {
+      "id": "app-icon-3",
+      "description": "Icon for a finance app.",
+      "imageUrl": "https://images.unsplash.com/photo-1737619285988-e6f0f43a9981?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhcHAlMjBpY29ufGVufDB8fHx8MTc2MzI3MzAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app icon"
+    },
+    {
+      "id": "app-screenshot-1",
+      "description": "Screenshot of an app's dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1758411898502-013b0cd3421c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcHAlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYzMzEwMTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app dashboard"
+    },
+    {
+      "id": "app-screenshot-2",
+      "description": "Screenshot of an app's profile page.",
+      "imageUrl": "https://images.unsplash.com/photo-1603210119591-86203e2fb266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcHAlMjBwcm9maWxlfGVufDB8fHx8MTc2MzMyOTYyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app profile"
+    },
+    {
+      "id": "app-screenshot-3",
+      "description": "Screenshot of an app's settings page.",
+      "imageUrl": "https://images.unsplash.com/photo-1762330462311-f75969906e16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcHAlMjBzZXR0aW5nc3xlbnwwfHx8fDE3NjMyMTc1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app settings"
+    },
+    {
+      "id": "app-screenshot-4",
+      "description": "Screenshot of an app's messaging interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1633354931133-27ac1ee5d853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcHAlMjBjaGF0fGVufDB8fHx8MTc2MzMyOTYxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app chat"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "Avatar of a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjMyNTYwOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "Avatar of a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzMjU2MDkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "Avatar of a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjMyNTYwOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
 }
