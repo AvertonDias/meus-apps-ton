@@ -50,7 +50,7 @@ export default function MeuOrcamentoPage() {
                   A segurança dos seus dados é nossa prioridade, com tudo armazenado localmente no seu dispositivo.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <PwaButton href="#" />
+                  <PwaButton href="https://meuorcamento.vercel.app/" />
                   <PlayStoreButton href="#" />
                 </div>
               </div>
