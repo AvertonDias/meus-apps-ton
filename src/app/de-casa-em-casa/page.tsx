@@ -50,7 +50,7 @@ export default function DeCasaEmCasaPage() {
                   Nossa interface intuitiva ajuda a reduzir o estresse e a garantir que nada seja esquecido.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <PwaButton href="#" />
+                  <PwaButton href="https://de-casa-em-casa.vercel.app/" />
                   <PlayStoreButton href="#" />
                 </div>
               </div>
