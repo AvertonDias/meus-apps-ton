@@ -1,7 +1,6 @@
 import { Header } from '@/components/header';
 import { Hero } from '@/components/hero';
 import { AppBanners } from '@/components/app-banners';
-import { SmartCta } from '@/components/smart-cta';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <AppBanners />
-        <SmartCta />
       </main>
       <Footer />
     </div>
