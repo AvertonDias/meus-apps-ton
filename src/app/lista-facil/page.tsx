@@ -50,7 +50,7 @@ export default function ListaFacilPage() {
                   Adicione itens por voz, categorize produtos e reutilize listas antigas para agilizar ainda mais suas idas ao mercado.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <PwaButton href="#" />
+                  <PwaButton href="https://lista-de-limpeza-facil.vercel.app/" />
                   <PlayStoreButton href="#" />
                 </div>
               </div>
