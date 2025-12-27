@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { AppStoreButton, PlayStoreButton } from '@/components/store-buttons';
+import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -50,7 +50,7 @@ export default function DeCasaEmCasaPage() {
                   Nossa interface intuitiva ajuda a reduzir o estresse e a garantir que nada seja esquecido.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <AppStoreButton href="#" />
+                  <PwaButton href="#" />
                   <PlayStoreButton href="#" />
                 </div>
               </div>
