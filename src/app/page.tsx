@@ -1,6 +1,6 @@
 import { Header } from '@/components/header';
 import { Hero } from '@/components/hero';
-import { AppShowcase } from '@/components/app-showcase';
+import { AppBanners } from '@/components/app-banners';
 import { Testimonials } from '@/components/testimonials';
 import { SmartCta } from '@/components/smart-cta';
 import { Footer } from '@/components/footer';
@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <AppShowcase />
+        <AppBanners />
         <Testimonials />
         <SmartCta />
       </main>
