@@ -6,7 +6,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <a href="/" className="flex items-center gap-2 font-bold">
           <Sparkles className="h-6 w-6 text-primary" />
-          <span className="text-lg">Vitrine de Apps</span>
+          <span className="text-lg">Ton Apps</span>
         </a>
       </div>
     </header>

@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'Vitrine de Apps',
+  title: 'Ton Apps',
   description: 'Apresente seus aplicativos com visuais atraentes e descrições concisas.',
 };
 
