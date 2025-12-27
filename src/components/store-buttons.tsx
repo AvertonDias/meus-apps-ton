@@ -47,7 +47,7 @@ export function PwaButton({ href, className }: { href: string, className?: strin
         </div>
         <div>
           <p className="text-sm font-semibold">Acessar o App</p>
-          <p className="text-xs font-normal text-left">(PWA)</p>
+          <p className="text-xs font-normal text-left">(Multiplataforma)</p>
         </div>
       </a>
     </Button>
