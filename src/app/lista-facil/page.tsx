@@ -105,6 +105,10 @@ const faqs = [
     {
         question: "Posso gerenciar mais de uma lista?",
         answer: "Inicialmente, cada administrador gerencia uma lista principal vinculada à sua conta. Futuras atualizações podem incluir a gestão de múltiplas listas para diferentes ambientes (casa, escritório, etc.)."
+    },
+    {
+        question: "Preciso pagar para usar o aplicativo?",
+        answer: "Não, o Lista Fácil é totalmente gratuito tanto para administradores de listas quanto para colaboradores."
     }
 ];
 
@@ -291,5 +295,7 @@ export default function ListaFacilPage() {
     </div>
   );
 }
+
+    
 
     
