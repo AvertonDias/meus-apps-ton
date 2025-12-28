@@ -109,6 +109,10 @@ const faqs = [
     {
         question: "Preciso pagar para usar o aplicativo?",
         answer: "Não, o Lista Fácil é totalmente gratuito tanto para administradores de listas quanto para colaboradores."
+    },
+    {
+        question: "É possível adicionar um item que não está na minha lista padrão?",
+        answer: "Sim! A página pública possui um campo para adicionar 'itens avulsos'. Isso é útil para necessidades pontuais, como 'Lâmpada da cozinha' ou 'Toner para impressora', que não fazem parte dos seus itens recorrentes."
     }
 ];
 
@@ -295,7 +299,3 @@ export default function ListaFacilPage() {
     </div>
   );
 }
-
-    
-
-    
