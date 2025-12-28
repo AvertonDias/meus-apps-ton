@@ -82,25 +82,24 @@ export default function DeCasaEmCasaPage() {
       <main className="flex-1">
         <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
           <div className="container relative z-10 flex h-full items-center justify-center">
-            <div className="flex items-center justify-center gap-8">
+            <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden md:block">
               <Image
-                  src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
-                  alt="Logotipo De Casa em Casa"
-                  width={150}
-                  height={150}
-                  className="hidden md:block"
+                src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
+                alt="Logotipo De Casa em Casa"
+                width={150}
+                height={150}
               />
-              <div className="text-center md:text-left">
-                  <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
-                  De Casa em Casa
-                  </h1>
-                  <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/80">
-                  A ferramenta digital para revolucionar a organização dos seus territórios.
-                  </p>
-                  <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                      <PwaButton href="https://de-casa-em-casa.vercel.app/" />
-                      <PlayStoreButton href="#" />
-                  </div>
+            </div>
+            <div className="flex h-full w-full flex-col items-center justify-center text-center">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
+                De Casa em Casa
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/80">
+                A ferramenta digital para revolucionar a organização dos seus territórios.
+              </p>
+              <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
+                <PwaButton href="https://de-casa-em-casa.vercel.app/" />
+                <PlayStoreButton href="#" />
               </div>
             </div>
           </div>
