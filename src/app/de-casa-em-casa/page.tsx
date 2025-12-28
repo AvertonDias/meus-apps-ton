@@ -6,39 +6,39 @@ import { Footer } from '@/components/footer';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Users, Map, Shield, CheckCircle, BarChart2, Settings, UserCheck, Smartphone, Edit, FileText, BotMessageSquare, UserPlus, BookUser } from 'lucide-react';
+import { Users, Map, Shield, CheckCircle, BarChart2, Settings, UserCheck, Smartphone, Edit, FileText, BotMessageSquare, UserPlus, BookUser, KeyRound, Construction, Route, ListChecks } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const features = [
   {
     icon: UserPlus,
     title: 'Gestão de Acessos Simplificada',
-    description: 'Novos usuários solicitam acesso, e os administradores aprovam com um clique, definindo perfis (Publicador, Dirigente, Servo) para manter tudo organizado.',
+    description: 'Novos usuários solicitam acesso, e os administradores aprovam com um clique, definindo perfis para manter tudo organizado.',
   },
   {
-    icon: Map,
+    icon: Route,
     title: 'Territórios Urbanos e Rurais',
-    description: 'Organize territórios urbanos com quadras e casas, ou use um diário de bordo para registrar o trabalho em territórios rurais, mantendo um histórico claro.',
+    description: 'Organize territórios urbanos com quadras e casas, ou use um diário de bordo para registrar o trabalho em territórios rurais.',
   },
   {
-    icon: CheckCircle,
+    icon: ListChecks,
     title: 'Trabalho de Campo em Tempo Real',
-    description: 'Marque casas como trabalhadas e veja o progresso ser atualizado instantaneamente para toda a congregação. Reordene a lista de casas para otimizar sua rota.',
+    description: 'Marque casas como trabalhadas e veja o progresso ser atualizado instantaneamente para toda a congregação.',
   },
   {
     icon: BotMessageSquare,
     title: 'Módulo de Administração Inteligente',
-    description: 'Designe territórios, defina datas de devolução, envie lembretes via WhatsApp e gere o relatório S-13 automaticamente com base nos dados do sistema.',
+    description: 'Designe territórios, defina datas, envie lembretes e gere o relatório S-13 automaticamente com base nos dados do sistema.',
   },
   {
     icon: BarChart2,
     title: 'Estatísticas e Visão Geral',
-    description: 'Acesse gráficos sobre a cobertura dos territórios, o tempo médio para completar os trabalhos e o histórico de designações para um planejamento eficiente.',
+    description: 'Acesse gráficos sobre a cobertura dos territórios, tempo médio de trabalho e histórico para um planejamento eficiente.',
   },
   {
-    icon: BookUser,
+    icon: KeyRound,
     title: 'Perfis de Usuário Flexíveis',
-    description: 'Cinco perfis de acesso (Administrador, Dirigente, Servo, Ajudante, Publicador) garantem que cada um veja apenas o que é necessário para sua função.',
+    description: 'Cinco perfis de acesso (Administrador, Dirigente, Servo, Ajudante, Publicador) garantem que cada um veja apenas o necessário.',
   },
 ];
 
@@ -80,13 +80,13 @@ export default function DeCasaEmCasaPage() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80" />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
             <div className="container">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-foreground">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
                 De Casa em Casa
               </h1>
-              <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
+              <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/80">
                 A ferramenta digital para revolucionar a organização dos seus territórios.
               </p>
                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -100,9 +100,9 @@ export default function DeCasaEmCasaPage() {
         <section id="features" className="py-16 sm:py-24">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades Pensadas para Você</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Uma Ferramenta Completa</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Organização, eficiência e colaboração em um só lugar.
+                        Organização, eficiência e colaboração em um só lugar. Do primeiro acesso à geração de relatórios.
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -157,7 +157,7 @@ export default function DeCasaEmCasaPage() {
         </section>
         
         <section id="faq" className="py-16 sm:py-24">
-            <div className="container">
+            <div className="container text-center">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
