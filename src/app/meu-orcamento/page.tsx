@@ -69,8 +69,8 @@ const faqs = [
         answer: "Totalmente. O 'Meu Orçamento' funciona offline, o que significa que todas as suas informações (clientes, produtos, orçamentos e relatórios) são armazenadas localmente, apenas no seu dispositivo. Ninguém mais tem acesso a eles, garantindo sua total privacidade e segurança."
     },
     {
-        question: "Existe algum custo mensal ou taxa extra?",
-        answer: "Não! O 'Meu Orçamento' opera com um modelo de pagamento único pela licença vitalícia. Você paga uma vez e tem acesso a todas as funcionalidades e futuras atualizações para sempre, sem mensalidades ou surpresas."
+        question: "O que acontece com meus dados se eu perder meu celular?",
+        answer: "Como os dados são armazenados localmente no seu dispositivo para garantir a funcionalidade offline e sua privacidade, é fundamental que você utilize a função de backup do aplicativo. Recomendamos que você faça backups regularmente para um local seguro (como Google Drive ou e-mail) para poder restaurar suas informações em um novo aparelho."
     }
 ];
 
@@ -113,9 +113,9 @@ export default function MeuOrcamentoPage() {
         <section id="features" className="py-16 sm:py-24">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades que Vão Revolucionar sua Rotina</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades que Impulsionam seu Negócio</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Do cálculo preciso de materiais ao envio de propostas profissionais, assuma o controle do seu negócio.
+                        Do cálculo preciso de materiais ao envio de propostas profissionais, assuma o controle total.
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
