@@ -112,7 +112,7 @@ export default function DeCasaEmCasaPage() {
                         Organização, eficiência e colaboração em um só lugar. Do primeiro acesso à geração de relatórios.
                     </p>
                 </div>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                     {features.map((feature) => (
                         <Card key={feature.title} className="flex flex-col">
                             <CardHeader className="flex flex-row items-center gap-4">
