@@ -38,15 +38,15 @@ const comingSoonApps = Array(3).fill({
 
 export function AppBanners() {
   return (
-    <section id="apps" className="py-16 sm:py-24 bg-secondary">
-      <div className="container text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nossos Aplicativos</h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-          Explore as soluções que criamos para facilitar o seu dia a dia.
-        </p>
-      </div>
+    <section id="apps" className="w-full py-16 sm:py-24 bg-secondary">
+      <div className="container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nossos Aplicativos</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            Explore as soluções que criamos para facilitar o seu dia a dia.
+          </p>
+        </div>
 
-      <div className="container mt-12">
         <div className="grid gap-8 max-w-4xl mx-auto">
           {apps.map((app) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);

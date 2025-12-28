@@ -104,7 +104,7 @@ export default function DeCasaEmCasaPage() {
           </div>
         </section>
 
-        <section id="features" className="py-16 sm:py-24">
+        <section id="features" className="w-full py-16 sm:py-24">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Uma Ferramenta Completa</h2>
@@ -128,7 +128,7 @@ export default function DeCasaEmCasaPage() {
             </div>
         </section>
         
-        <section id="gallery" className="py-16 sm:py-24 bg-secondary">
+        <section id="gallery" className="w-full py-16 sm:py-24 bg-secondary">
              <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Veja o App em Ação</h2>
@@ -163,7 +163,7 @@ export default function DeCasaEmCasaPage() {
             </div>
         </section>
         
-        <section id="faq" className="py-16 sm:py-24">
+        <section id="faq" className="w-full py-16 sm:py-24">
             <div className="container">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
