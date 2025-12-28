@@ -49,7 +49,7 @@ export function PlayStoreButton({ href, className }: { href: string, className?:
       </Button>
       {isComingSoon && (
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <span className="transform -rotate-[15deg] bg-red-600/80 text-white font-bold py-1 px-4 rounded-md border-2 border-white/80 text-lg">
+          <span className="transform -rotate-[15deg] bg-red-600/70 text-white font-bold py-1 px-4 rounded-md border-2 border-white/80 text-lg">
             Em Breve
           </span>
         </div>
