@@ -39,7 +39,7 @@
     {
       "id": "banner-lista-facil",
       "description": "Banner para o aplicativo Lista Fácil",
-      "imageUrl": "https://images.unsplash.com/photo-1570913196376-dacb677ef459?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaG9wcGluZyUyMGxpc3R8ZW58MHx8fHwxNzY2ODY2NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/ListaFacil/ListaFacilLogo.png",
       "imageHint": "shopping list"
     },
     {
