@@ -69,8 +69,8 @@ const faqs = [
         answer: "Totalmente. O 'Meu Orçamento' funciona offline, o que significa que todas as suas informações (clientes, produtos, orçamentos e relatórios) são armazenadas localmente, apenas no seu dispositivo. Ninguém mais tem acesso a eles, garantindo sua total privacidade e segurança."
     },
     {
-        question: "O aplicativo tem algum tipo de suporte ou ajuda?",
-        answer: "Sim. Dentro do aplicativo, você encontrará uma seção de ajuda e tutoriais para guiá-lo nas principais funcionalidades. Além disso, oferecemos um canal de suporte direto para tirar dúvidas e receber sugestões."
+        question: "Existe algum custo mensal ou taxa extra?",
+        answer: "Não! O 'Meu Orçamento' opera com um modelo de pagamento único pela licença vitalícia. Você paga uma vez e tem acesso a todas as funcionalidades e futuras atualizações para sempre, sem mensalidades ou surpresas."
     }
 ];
 
@@ -97,7 +97,7 @@ export default function MeuOrcamentoPage() {
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
             <div className="container">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                Meu Orçamento: O App para Profissionais de Serviço
+                Meu Orçamento: Menos Burocracia, Mais Lucro.
               </h1>
               <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-primary-foreground/80">
                 A ferramenta definitiva para serralheiros, calheiros e autônomos que buscam mais lucro e menos burocracia.
@@ -115,7 +115,7 @@ export default function MeuOrcamentoPage() {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades que Vão Revolucionar sua Rotina</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu negócio.
+                        Do cálculo preciso de materiais ao envio de propostas profissionais, assuma o controle do seu negócio.
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -195,5 +195,3 @@ export default function MeuOrcamentoPage() {
     </div>
   );
 }
-
-    
