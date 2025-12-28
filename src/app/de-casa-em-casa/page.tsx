@@ -78,7 +78,7 @@ export default function DeCasaEmCasaPage() {
                 height={150}
                 className="hidden md:block rounded-full"
               />
-              <div className="flex-1">
+              <div className="mx-auto">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
                   De Casa em Casa
                 </h1>
