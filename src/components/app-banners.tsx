@@ -45,11 +45,11 @@ export function AppBanners() {
         </p>
       </div>
 
-      <div className="container mt-12 flex flex-col items-center gap-8">
+      <div className="container mt-12 flex flex-col gap-8">
           {apps.map((app) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
-              <Card key={app.id} className="overflow-hidden group rounded-lg w-full max-w-4xl">
+              <Card key={app.id} className="overflow-hidden group rounded-lg w-full max-w-4xl mx-auto">
                 <Link href={app.href}>
                   <CardContent className="p-0">
                     <div className="flex flex-col md:flex-row items-center">
@@ -82,7 +82,7 @@ export function AppBanners() {
           {comingSoonApps.map((app, index) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
-              <Card key={`coming-soon-${index}`} className="overflow-hidden bg-muted/50 rounded-lg w-full max-w-4xl">
+              <Card key={`coming-soon-${index}`} className="overflow-hidden bg-muted/50 rounded-lg w-full max-w-4xl mx-auto">
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="p-6 flex-1 text-left">
