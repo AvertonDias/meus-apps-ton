@@ -90,7 +90,7 @@ export default function DeCasaEmCasaPage() {
                 height={150}
               />
             </div>
-            <div className="flex h-full w-full flex-col justify-center text-center md:pl-48">
+            <div className="flex h-full w-full flex-col justify-center text-center md:pl-64">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
                 De Casa em Casa
               </h1>
