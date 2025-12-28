@@ -6,14 +6,14 @@ import { Footer } from '@/components/footer';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Users, Map, BarChart2, Book, Shield, Settings, HelpCircle, CheckCircle } from 'lucide-react';
+import { Users, Map, Shield, CheckCircle, BarChart2, Settings, UserCheck, Smartphone, Edit, FileText } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const features = [
   {
-    icon: Users,
-    title: 'Gestão de Usuários Simplificada',
-    description: 'Aprove e gerencie publicadores, dirigentes e servos de territórios com perfis e permissões específicas. Novos acessos são solicitados e aprovados em um fluxo simples e seguro.',
+    icon: UserCheck,
+    title: 'Gestão de Acessos Centralizada',
+    description: 'Publicadores solicitam acesso de forma simples. Administradores e dirigentes aprovam ou rejeitam os cadastros e gerenciam os diferentes perfis de usuário (Publicador, Servo, Dirigente) em uma tela intuitiva.',
   },
   {
     icon: Map,
@@ -21,43 +21,43 @@ const features = [
     description: 'Organize territórios urbanos com quadras e casas, e acompanhe o progresso em tempo real. Para territórios rurais, utilize um diário de bordo para registrar cada visita e manter um histórico claro.',
   },
   {
-    icon: Shield,
-    title: 'Administração Poderosa',
-    description: 'Designe territórios, acompanhe datas de devolução, envie lembretes e tenha uma visão geral da cobertura. Gere o relatório S-13 automaticamente com base nos dados do sistema.',
-  },
-  {
     icon: CheckCircle,
-    title: 'Trabalho de Campo Eficiente',
-    description: 'Publicadores marcam casas como trabalhadas com um clique, e todos na congregação veem o progresso instantaneamente. Reordene casas para seguir a rota da rua e otimizar o percurso.',
-  },
-   {
-    icon: BarChart2,
-    title: 'Estatísticas e Relatórios',
-    description: 'Acesse gráficos sobre a cobertura dos territórios nos últimos 6 ou 12 meses e entenda o tempo médio para completar os trabalhos, ajudando no planejamento futuro.',
+    title: 'Trabalho de Campo Simplificado',
+    description: 'Marque casas como trabalhadas com um clique e veja a atualização instantânea para toda a congregação. Reordene a lista de casas para seguir a rota da rua e otimizar o percurso.',
   },
   {
-    icon: Settings,
-    title: 'Personalização e Acessibilidade',
-    description: 'Escolha entre tema claro ou escuro e ajuste o tamanho da fonte para uma leitura mais confortável. Instale o app no seu dispositivo para acesso rápido e funcionamento offline.',
+    icon: Shield,
+    title: 'Módulo de Administração Completo',
+    description: 'Designe territórios para publicadores, defina datas de devolução, envie lembretes e gere o relatório S-13 automaticamente com base nos dados do sistema.',
+  },
+  {
+    icon: BarChart2,
+    title: 'Estatísticas e Visão Geral',
+    description: 'Acesse gráficos sobre a cobertura dos territórios nos últimos meses e entenda o tempo médio para completar os trabalhos, ajudando no planejamento e na tomada de decisões.',
+  },
+  {
+    icon: Smartphone,
+    title: 'Acessibilidade e Experiência Offline',
+    description: 'Instale o app no seu dispositivo para acesso rápido. O sistema funciona offline, sincronizando os dados assim que a conexão com a internet for restabelecida. Personalize o tema (claro/escuro) e o tamanho da fonte.',
   },
 ];
 
 const faqs = [
     {
         question: "Como um publicador solicita o acesso?",
-        answer: "Na tela de login, clique em 'Solicite seu acesso aqui', preencha seus dados e o número da sua congregação. Um administrador precisará aprovar sua solicitação."
+        answer: "Na tela de login, clique em 'Solicite seu acesso aqui', preencha seus dados, crie uma senha e insira o número da sua congregação. Um administrador precisará aprovar sua solicitação para você ter acesso completo."
     },
     {
         question: "O aplicativo funciona offline?",
         answer: "Sim! Você pode instalar o 'De Casa em Casa' no seu celular ou computador. Ele funciona mesmo sem conexão com a internet, sincronizando os dados assim que você se reconectar."
     },
-    {
-        question: "Como o relatório S-13 é gerado?",
-        answer: "O administrador pode acessar a aba 'Relatório S-13' no módulo de administração. O sistema compila todo o histórico de designações do ano de serviço e gera o documento pronto para impressão."
+     {
+        question: "Posso mudar a ordem das casas em uma quadra?",
+        answer: "Sim! Use o botão 'Reordenar' para arrastar e soltar os números na sequência exata do seu percurso, otimizando seu trabalho de campo."
     },
     {
         question: "É seguro usar este aplicativo?",
-        answer: "Sim, a segurança é uma prioridade. O acesso é controlado por aprovação e os perfis de usuário garantem que cada um veja apenas as informações pertinentes à sua função."
+        answer: "Sim, a segurança é uma prioridade. O acesso é controlado por aprovação de administradores, e os perfis de usuário garantem que cada pessoa veja apenas as informações pertinentes à sua função na congregação."
     }
 ]
 
