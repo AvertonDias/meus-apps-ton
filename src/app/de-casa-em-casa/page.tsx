@@ -69,27 +69,25 @@ export default function DeCasaEmCasaPage() {
       <Header />
       <main className="flex-1">
         <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
-          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
-            <div className="container flex items-center justify-center gap-8">
-               <Image
+          <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center">
+            <Image
                 src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
                 alt="Logotipo De Casa em Casa"
                 width={150}
                 height={150}
-                className="hidden md:block rounded-full"
-              />
-              <div className="mx-auto">
+                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 hidden md:block rounded-full"
+            />
+            <div className="mx-auto">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
-                  De Casa em Casa
+                De Casa em Casa
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/80">
-                  A ferramenta digital para revolucionar a organização dos seus territórios.
+                A ferramenta digital para revolucionar a organização dos seus territórios.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <PwaButton href="https://de-casa-em-casa.vercel.app/" />
                     <PlayStoreButton href="#" />
                 </div>
-              </div>
             </div>
           </div>
         </section>
