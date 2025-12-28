@@ -90,7 +90,6 @@ export default function MeuOrcamentoPage() {
                     alt="Logotipo Meu Orçamento"
                     width={150}
                     height={150}
-                    className="rounded-full"
                 />
             </div>
             <div className="flex flex-col items-center text-center text-primary-foreground">
