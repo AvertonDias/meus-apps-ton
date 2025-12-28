@@ -101,9 +101,9 @@ export default function MeuOrcamentoPage() {
         <section id="features" className="py-16 sm:py-24">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades que Vão Revolucionar sua Rotina</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Menos Burocracia, Mais Lucro.</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu negócio.
+                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu negócio, mesmo offline.
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
