@@ -58,6 +58,18 @@ const faqs = [
     {
         question: "É seguro usar este aplicativo?",
         answer: "Sim, a segurança é uma prioridade. O acesso é controlado por aprovação de administradores, e os perfis de usuário garantem que cada pessoa veja apenas as informações pertinentes à sua função na congregação."
+    },
+    {
+      question: "Como o relatório S-13 é gerado?",
+      answer: "O administrador define uma data de fechamento para o território. Com base em todas as casas trabalhadas até essa data, o sistema compila e gera automaticamente o relatório S-13, pronto para ser utilizado."
+    },
+    {
+      question: "Qual a diferença do trabalho em territórios rurais?",
+      answer: "Para territórios rurais, em vez de cadastrar cada casa, você usa um 'Diário de Bordo'. Nele, você pode adicionar notas sobre o trabalho do dia, como as ruas visitadas ou contatos importantes, oferecendo flexibilidade para áreas menos densas."
+    },
+    {
+      question: "Todos na congregação podem ver o progresso do território?",
+      answer: "Sim, todos os usuários com acesso ao território designado podem ver o mapa e o progresso em tempo real, incluindo quais casas já foram trabalhadas. Isso promove a colaboração e evita que a mesma casa seja visitada duas vezes."
     }
 ]
 
