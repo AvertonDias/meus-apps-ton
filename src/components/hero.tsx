@@ -22,15 +22,15 @@ export function Hero() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
         <div className="container">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            A Vitrine Perfeita para Seus Aplicativos
+            Soluções Inteligentes para Organizar seu Dia a Dia
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/80">
-            Crie uma página de destino deslumbrante para seus aplicativos com facilidade. Destaque recursos, mostre avaliações e cative seu público.
+            Descubra aplicativos práticos e inovadores, criados para simplificar tarefas e aumentar sua produtividade.
           </p>
           <div className="mt-8">
             <Button size="lg" asChild>
               <a href="#apps">
-                Veja os Apps
+                Conheça os Apps
                 <ArrowDown className="ml-2 h-5 w-5" />
               </a>
             </Button>
