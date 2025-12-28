@@ -94,7 +94,7 @@ export default function DeCasaEmCasaPage() {
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
                 De Casa em Casa
               </h1>
-              <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/80 mx-auto md:mx-0">
+              <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/80 mx-auto">
                 A ferramenta digital para revolucionar a organização dos seus territórios.
               </p>
               <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row md:justify-start justify-center">
