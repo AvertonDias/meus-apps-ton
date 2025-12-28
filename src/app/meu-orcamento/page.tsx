@@ -65,6 +65,10 @@ const faqs = [
         answer: "Sim! Você pode cadastrar produtos e serviços diretamente no catálogo. Para clientes, você pode adicioná-los manualmente ou importar contatos diretamente da agenda do seu celular com apenas um clique."
     },
     {
+        question: "O que acontece se eu já tiver um item cadastrado e comprar mais do mesmo?",
+        answer: "O sistema é inteligente para lidar com isso. Ao usar o Conversor de Bobinas para um material que já existe, o app irá perguntar se você deseja atualizar o item existente. Você pode optar por somar a nova quantidade ao estoque e até mesmo atualizar o preço de custo, caso o valor da nova compra seja diferente. Isso mantém seu controle de custos sempre preciso."
+    },
+    {
         question: "Meus dados estão seguros na nuvem?",
         answer: "Sim. Seus dados são sincronizados de forma segura e automática na nuvem. Isso significa que, mesmo que você perca seu celular, suas informações estarão a salvo e acessíveis assim que você fizer login em um novo dispositivo."
     },
