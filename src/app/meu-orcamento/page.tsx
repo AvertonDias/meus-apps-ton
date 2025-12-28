@@ -57,16 +57,16 @@ const faqs = [
         answer: "Com certeza. Você pode adicionar o logotipo da sua empresa, que aparecerá em todos os orçamentos em PDF que você enviar, transmitindo muito mais profissionalismo aos seus clientes."
     },
     {
+        question: "O que acontece se eu já tiver um item cadastrado e comprar mais do mesmo?",
+        answer: "O sistema é inteligente para lidar com isso. Ao usar o Conversor de Bobinas para um material que já existe, o app irá perguntar se você deseja atualizar o item existente. Você pode optar por somar a nova quantidade ao estoque e até mesmo atualizar o preço de custo, caso o valor da nova compra seja diferente. Isso mantém seu controle de custos sempre preciso."
+    },
+    {
         question: "Como o app me ajuda a controlar o lucro?",
         answer: "Para cada orçamento, o aplicativo gera um relatório interno (visível apenas para você) que detalha os custos de materiais e mão de obra, a margem aplicada e o lucro total do projeto. Isso te dá uma visão clara da saúde financeira do seu negócio."
     },
     {
         question: "É fácil cadastrar meus produtos e clientes?",
         answer: "Sim! Você pode cadastrar produtos e serviços diretamente no catálogo. Para clientes, você pode adicioná-los manualmente ou importar contatos diretamente da agenda do seu celular com apenas um clique."
-    },
-    {
-        question: "O que acontece se eu já tiver um item cadastrado e comprar mais do mesmo?",
-        answer: "O sistema é inteligente para lidar com isso. Ao usar o Conversor de Bobinas para um material que já existe, o app irá perguntar se você deseja atualizar o item existente. Você pode optar por somar a nova quantidade ao estoque e até mesmo atualizar o preço de custo, caso o valor da nova compra seja diferente. Isso mantém seu controle de custos sempre preciso."
     },
     {
         question: "Meus dados estão seguros na nuvem?",
