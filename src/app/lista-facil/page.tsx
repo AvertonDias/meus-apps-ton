@@ -113,6 +113,10 @@ const faqs = [
     {
         question: "É possível adicionar um item que não está na minha lista padrão?",
         answer: "Sim! A página pública possui um campo para adicionar 'itens avulsos'. Isso é útil para necessidades pontuais, como 'Lâmpada da cozinha' ou 'Toner para impressora', que não fazem parte dos seus itens recorrentes."
+    },
+    {
+        question: "Posso gerenciar o que aparece na minha lista pública?",
+        answer: "Com certeza. No seu painel, você tem controle total sobre os 'Itens Padrão'. Você pode adicionar, editar ou remover itens a qualquer momento, e as alterações são refletidas instantaneamente na sua página pública."
     }
 ];
 
