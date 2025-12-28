@@ -49,8 +49,8 @@ const faqs = [
         answer: "Sim! O 'Meu Orçamento' foi pensado para o dia a dia em campo. Você pode criar, editar e gerenciar orçamentos completamente offline. Assim que você se conectar à internet, os dados são sincronizados automaticamente com a nuvem."
     },
     {
-        question: "Como funciona o conversor de bobinas?",
-        answer: "É simples. Você insere os dados da bobina (peso, largura, espessura e tipo de metal) e o nosso sistema calcula o comprimento exato (rendimento) e o custo preciso por metro. Isso garante que você nunca mais tenha prejuízo ao precificar materiais."
+        question: 'Como funciona o "Conversor de Bobinas"?',
+        answer: "Essa é uma ferramenta exclusiva para evitar prejuízos! Você simplesmente insere os dados da sua bobina de metal:\n- Peso (kg)\n- Largura (mm)\n- Espessura (mm)\n- Tipo de metal (ex: Aço Galvanizado)\n\nCom base nisso, o sistema calcula o comprimento exato em metros (rendimento) e o custo preciso por metro, com base no valor que você pagou pela bobina. Assim, você pode adicionar o material ao seu estoque com o preço de custo correto, garantindo seu lucro em cada centímetro vendido."
     },
     {
         question: "Posso personalizar os orçamentos com a minha marca?",
@@ -82,30 +82,30 @@ export default function MeuOrcamentoPage() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[60vh] min-h-[400px] w-full bg-gradient-to-t from-blue-900/80 via-blue-800/50 to-blue-900/80">
-          <div className="container h-full grid md:grid-cols-[1fr_auto_1fr] items-center">
-            <div className="hidden md:flex justify-end pr-8">
-                <Image
-                    src="/MeuOrcamento/MeuOrcamentoLogo.jpg"
-                    alt="Logotipo Meu Orçamento"
-                    width={150}
-                    height={150}
-                />
-            </div>
-            <div className="flex flex-col items-center text-center text-primary-foreground">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                Meu Orçamento
-              </h1>
-              <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-primary-foreground/80">
-                Menos Burocracia, Mais Lucro. A ferramenta definitiva para serralheiros, calheiros e autônomos que buscam mais lucro e menos burocracia.
-              </p>
-               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                  <PwaButton href="https://meuorcamento.vercel.app/" />
-                  <PlayStoreButton href="#" />
+        <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-blue-900/80 via-blue-800/50 to-blue-900/80">
+            <div className="container h-full grid md:grid-cols-[1fr_auto_1fr] items-center">
+                <div className="hidden md:flex justify-end pr-8">
+                    <Image
+                        src="/MeuOrcamento/MeuOrcamentoLogo.jpg"
+                        alt="Logotipo Meu Orçamento"
+                        width={150}
+                        height={150}
+                    />
                 </div>
+                <div className="flex flex-col items-center text-center text-primary-foreground">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                    Meu Orçamento
+                </h1>
+                <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-primary-foreground/80">
+                    Menos Burocracia, Mais Lucro. A ferramenta definitiva para serralheiros, calheiros e autônomos que buscam mais lucro e menos burocracia.
+                </p>
+                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <PwaButton href="https://meuorcamento.vercel.app/" />
+                    <PlayStoreButton href="#" />
+                    </div>
+                </div>
+                <div className="hidden md:block"></div>
             </div>
-            <div className="hidden md:block"></div>
-          </div>
         </section>
 
         <section id="features" className="w-full py-16 sm:py-24">
@@ -179,7 +179,7 @@ export default function MeuOrcamentoPage() {
                     {faqs.map((faq, index) =>(
                         <AccordionItem value={`item-${index+1}`} key={index}>
                             <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
-                            <AccordionContent className="text-base text-muted-foreground text-left">
+                            <AccordionContent className="text-base text-muted-foreground text-left whitespace-pre-line">
                             {faq.answer}
                             </AccordionContent>
                         </AccordionItem>
