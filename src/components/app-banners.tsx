@@ -9,7 +9,7 @@ const apps = [
   {
     id: 'de-casa-em-casa',
     name: 'De Casa em Casa',
-    description: 'A solução completa para organizar e gerenciar sua mudança residencial com tranquilidade e eficiência.',
+    description: 'A ferramenta digital para organizar territórios, acompanhar o progresso em tempo real e otimizar o trabalho de campo.',
     imageUrlId: 'banner-de-casa-em-casa',
     href: '/de-casa-em-casa',
   },
