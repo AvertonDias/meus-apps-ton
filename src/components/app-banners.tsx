@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -45,68 +46,70 @@ export function AppBanners() {
         </p>
       </div>
 
-      <div className="container mt-12 flex flex-col gap-8">
+      <div className="container mt-12 grid gap-8">
           {apps.map((app) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
-              <Card key={app.id} className="overflow-hidden group rounded-lg w-full max-w-4xl mx-auto">
-                <Link href={app.href}>
+              <Link key={app.id} href={app.href} className="w-full max-w-4xl mx-auto">
+                <Card className="overflow-hidden group rounded-lg">
                   <CardContent className="p-0">
-                    <div className="flex flex-col md:flex-row items-center">
-                      <div className="p-6 flex-1 text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center">
+                      <div className="p-6 text-left">
                         <h3 className="text-2xl font-bold">{app.name}</h3>
                         <p className="mt-2 text-base text-muted-foreground">{app.description}</p>
                         <Button variant="link" className="mt-4 px-0">
                           Saiba Mais <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </div>
-                      <div className="p-6">
+                      <div className="p-6 flex justify-center md:justify-end">
                         {image && (
                           <Image
                             src={image.imageUrl}
                             alt={`Banner para ${app.name}`}
                             width={240}
                             height={120}
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            className="object-cover transition-transform duration-300 group-hover:scale-105 rounded-md"
                             data-ai-hint={image.imageHint}
                           />
                         )}
                       </div>
                     </div>
                   </CardContent>
-                </Link>
-              </Card>
+                </Card>
+              </Link>
             );
           })}
           
           {comingSoonApps.map((app, index) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
-              <Card key={`coming-soon-${index}`} className="overflow-hidden bg-muted/50 rounded-lg w-full max-w-4xl mx-auto">
-                <CardContent className="p-0">
-                  <div className="flex flex-col md:flex-row items-center">
-                    <div className="p-6 flex-1 text-left">
-                      <h3 className="text-2xl font-bold flex items-center gap-2 text-muted-foreground">
-                        <Clock className="h-5 w-5" />
-                        {app.name}
-                      </h3>
-                      <p className="mt-2 text-base text-muted-foreground">{app.description}</p>
+              <div key={`coming-soon-${index}`} className="w-full max-w-4xl mx-auto">
+                <Card className="overflow-hidden bg-muted/50 rounded-lg">
+                  <CardContent className="p-0">
+                    <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center">
+                      <div className="p-6 text-left">
+                        <h3 className="text-2xl font-bold flex items-center gap-2 text-muted-foreground">
+                          <Clock className="h-5 w-5" />
+                          {app.name}
+                        </h3>
+                        <p className="mt-2 text-base text-muted-foreground">{app.description}</p>
+                      </div>
+                      <div className="h-full opacity-30 p-6 flex justify-center md:justify-end">
+                        {image && (
+                            <Image
+                              src={image.imageUrl}
+                              alt={app.name}
+                              width={240}
+                              height={120}
+                              className="object-cover rounded-md"
+                              data-ai-hint={image.imageHint}
+                            />
+                        )}
+                      </div>
                     </div>
-                    <div className="h-full opacity-30 p-6">
-                      {image && (
-                          <Image
-                            src={image.imageUrl}
-                            alt={app.name}
-                            width={240}
-                            height={120}
-                            className="object-cover"
-                            data-ai-hint={image.imageHint}
-                          />
-                      )}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </div>
             );
           })}
       </div>
