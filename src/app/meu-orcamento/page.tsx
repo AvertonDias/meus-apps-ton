@@ -95,10 +95,10 @@ export default function MeuOrcamentoPage() {
             </div>
             <div className="flex flex-col items-center text-center text-primary-foreground">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                Meu Orçamento: Menos Burocracia, Mais Lucro.
+                Meu Orçamento
               </h1>
               <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-primary-foreground/80">
-                A ferramenta definitiva para serralheiros, calheiros e autônomos que buscam mais lucro e menos burocracia.
+                Menos Burocracia, Mais Lucro. A ferramenta definitiva para serralheiros, calheiros e autônomos que buscam mais lucro e menos burocracia.
               </p>
                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                   <PwaButton href="https://meuorcamento.vercel.app/" />
