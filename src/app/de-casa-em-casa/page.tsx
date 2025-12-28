@@ -97,7 +97,7 @@ export default function DeCasaEmCasaPage() {
                   <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/80">
                   A ferramenta digital para revolucionar a organização dos seus territórios.
                   </p>
-                  <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                  <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                       <PwaButton href="https://de-casa-em-casa.vercel.app/" />
                       <PlayStoreButton href="#" />
                   </div>
