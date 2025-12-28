@@ -7,7 +7,7 @@ import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Calculator, FileText, Users, Box, BarChartHorizontal, Palette, WifiOff } from 'lucide-react';
+import { Calculator, FileText, Users, Box, BarChartHorizontal, WifiOff, Cloud } from 'lucide-react';
 
 
 const features = [
@@ -37,16 +37,16 @@ const features = [
     description: 'Gere relatórios para o cliente (só com preço de venda) e para você (com custos, margens e lucro total).',
   },
   {
-    icon: WifiOff,
-    title: 'Funcionalidade Offline',
-    description: 'Crie e edite orçamentos em qualquer lugar, mesmo sem conexão com a internet. Os dados são sincronizados automaticamente.',
+    icon: Cloud,
+    title: 'Sincronização na Nuvem',
+    description: 'Acesse seus dados em múltiplos dispositivos (celular, tablet, PC). Suas informações estão sempre seguras e sincronizadas.',
   },
 ];
 
 const faqs = [
     {
         question: "O aplicativo funciona sem internet?",
-        answer: "Sim! O 'Meu Orçamento' foi pensado para o dia a dia em campo. Você pode criar, editar e gerenciar orçamentos completamente offline. Assim que você se conectar à internet, os dados são sincronizados automaticamente."
+        answer: "Sim! O 'Meu Orçamento' foi pensado para o dia a dia em campo. Você pode criar, editar e gerenciar orçamentos completamente offline. Assim que você se conectar à internet, os dados são sincronizados automaticamente com a nuvem."
     },
     {
         question: "Como funciona o conversor de bobinas?",
@@ -65,12 +65,8 @@ const faqs = [
         answer: "Sim! Você pode cadastrar produtos e serviços diretamente no catálogo, definindo preços e unidades. Para clientes, você pode adicioná-los manualmente ou importar contatos diretamente da agenda do seu celular com apenas um clique, economizando muito tempo."
     },
     {
-        question: "Os dados que eu insiro no aplicativo estão seguros?",
-        answer: "Totalmente. O 'Meu Orçamento' funciona offline, o que significa que todas as suas informações (clientes, produtos, orçamentos e relatórios) são armazenadas localmente, apenas no seu dispositivo. Ninguém mais tem acesso a eles, garantindo sua total privacidade e segurança."
-    },
-    {
-        question: "O que acontece com meus dados se eu perder meu celular?",
-        answer: "Como os dados são armazenados localmente no seu dispositivo para garantir a funcionalidade offline e sua privacidade, é fundamental que você utilize a função de backup do aplicativo. Recomendamos que você faça backups regularmente para um local seguro (como Google Drive ou e-mail) para poder restaurar suas informações em um novo aparelho."
+        question: "Meus dados estão seguros na nuvem?",
+        answer: "Sim, a segurança é nossa prioridade. Seus dados são criptografados e armazenados de forma segura na nuvem, permitindo que você acesse suas informações de qualquer dispositivo com seu login e senha, sem se preocupar com perdas."
     }
 ];
 
