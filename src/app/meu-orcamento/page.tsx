@@ -53,12 +53,12 @@ const faqs = [
         answer: "Com certeza. Você pode adicionar o logotipo da sua empresa, que aparecerá em todos os orçamentos em PDF que você enviar, transmitindo muito mais profissionalismo aos seus clientes."
     },
     {
-        question: "O que acontece se eu já tiver um item cadastrado e comprar mais do mesmo?",
-        answer: "O sistema é inteligente para lidar com isso. Ao usar o Conversor de Bobinas para um material que já existe, o app irá perguntar se você deseja atualizar o item existente. Você pode optar por somar a nova quantidade ao estoque e até mesmo atualizar o preço de custo, caso o valor da nova compra seja diferente. Isso mantém seu controle de custos sempre preciso."
-    },
-    {
         question: 'Como funciona o "Conversor de Bobinas"?',
         answer: "Essa é uma ferramenta exclusiva para evitar prejuízos! Você simplesmente insere os dados da sua bobina de metal:\n- Peso (kg)\n- Largura (mm)\n- Espessura (mm)\n- Tipo de metal (ex: Aço Galvanizado)\n\nCom base nisso, o sistema calcula o comprimento exato em metros (rendimento) e o custo preciso por metro, com base no valor que você pagou pela bobina. Assim, você pode adicionar o material ao seu estoque com o preço de custo correto, garantindo seu lucro em cada centímetro vendido."
+    },
+    {
+        question: "O que acontece se eu já tiver um item cadastrado e comprar mais do mesmo?",
+        answer: "O sistema é inteligente para lidar com isso. Ao usar o Conversor de Bobinas para um material que já existe, o app irá perguntar se você deseja atualizar o item existente. Você pode optar por somar a nova quantidade ao estoque e até mesmo atualizar o preço de custo, caso o valor da nova compra seja diferente. Isso mantém seu controle de custos sempre preciso."
     },
     {
         question: "Como o app me ajuda a controlar o lucro?",
