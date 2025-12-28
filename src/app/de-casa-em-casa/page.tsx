@@ -60,8 +60,8 @@ const faqs = [
         answer: "Sim, a segurança é uma prioridade. O acesso é controlado por aprovação de administradores, e os perfis de usuário garantem que cada pessoa veja apenas as informações pertinentes à sua função na congregação."
     },
     {
-      question: "Como o relatório S-13 é gerado?",
-      answer: "O administrador define uma data de fechamento para o território. Com base em todas as casas trabalhadas até essa data, o sistema compila e gera automaticamente o relatório S-13, pronto para ser utilizado."
+      question: "Como funciona o fechamento de um território?",
+      answer: "O administrador define uma data de fechamento para o território. Com base em todas as casas trabalhadas até essa data, o sistema compila e gera automaticamente os relatórios, incluindo o S-13, pronto para ser utilizado."
     },
     {
       question: "Qual a diferença do trabalho em territórios rurais?",
