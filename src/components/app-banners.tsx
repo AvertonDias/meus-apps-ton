@@ -53,15 +53,15 @@ export function AppBanners() {
               <Card key={app.id} className="overflow-hidden group rounded-lg w-full max-w-4xl mx-auto">
                 <Link href={app.href}>
                   <CardContent className="p-0">
-                    <div className="grid md:grid-cols-2 items-center">
-                      <div className="p-6">
+                    <div className="flex flex-col md:flex-row items-center justify-center">
+                      <div className="p-6 flex-1">
                         <h3 className="text-xl font-bold">{app.name}</h3>
                         <p className="mt-2 text-sm text-muted-foreground">{app.description}</p>
                         <Button variant="link" className="mt-4 px-0">
                           Saiba Mais <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </div>
-                      <div className="h-full w-full overflow-hidden">
+                      <div className="h-full overflow-hidden p-6">
                         {image && (
                           <Image
                             src={image.imageUrl}
@@ -85,15 +85,15 @@ export function AppBanners() {
             return (
               <Card key={`coming-soon-${index}`} className="overflow-hidden bg-muted/50 rounded-lg w-full max-w-4xl mx-auto">
                 <CardContent className="p-0">
-                  <div className="grid md:grid-cols-2 items-center">
-                    <div className="p-6">
+                  <div className="flex flex-col md:flex-row items-center justify-center">
+                    <div className="p-6 flex-1">
                       <h3 className="text-xl font-bold flex items-center gap-2 text-muted-foreground">
                         <Clock className="h-5 w-5" />
                         {app.name}
                       </h3>
                       <p className="mt-2 text-sm text-muted-foreground">{app.description}</p>
                     </div>
-                    <div className="h-full w-full opacity-30 overflow-hidden">
+                    <div className="h-full opacity-30 overflow-hidden p-6">
                       {image && (
                           <Image
                             src={image.imageUrl}
