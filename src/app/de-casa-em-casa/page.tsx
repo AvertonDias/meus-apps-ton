@@ -80,17 +80,25 @@ export default function DeCasaEmCasaPage() {
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
-          <div className="container h-full grid md:grid-cols-[1fr_auto_1fr] items-center">
-            <div className="hidden md:flex justify-end pr-8">
+        <section className="relative h-[50vh] min-h-[400px] sm:min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
+          <div className="container h-full flex flex-col justify-center items-center text-center">
+            <div className="md:hidden mb-4">
                 <Image
+                    src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
+                    alt="Logotipo De Casa em Casa"
+                    width={100}
+                    height={100}
+                />
+            </div>
+            <div className="hidden md:block absolute left-8 top-1/2 -translate-y-1/2">
+                 <Image
                     src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
                     alt="Logotipo De Casa em Casa"
                     width={150}
                     height={150}
                 />
             </div>
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
                 De Casa em Casa
               </h1>
@@ -102,7 +110,6 @@ export default function DeCasaEmCasaPage() {
                 <PlayStoreButton href="#" />
               </div>
             </div>
-             <div className="hidden md:block"></div>
           </div>
         </section>
 
