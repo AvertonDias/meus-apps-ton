@@ -164,7 +164,7 @@ export default function DeCasaEmCasaPage() {
         </section>
         
         <section id="faq" className="py-16 sm:py-24">
-            <div className="container mx-auto">
+            <div className="container">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">

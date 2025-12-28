@@ -46,11 +46,12 @@ export function AppBanners() {
         </p>
       </div>
 
-      <div className="container mt-12 grid gap-8">
+      <div className="container mt-12">
+        <div className="grid gap-8 max-w-4xl mx-auto">
           {apps.map((app) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
-              <Link key={app.id} href={app.href} className="w-full max-w-4xl mx-auto">
+              <Link key={app.id} href={app.href} className="w-full">
                 <Card className="overflow-hidden group rounded-lg">
                   <CardContent className="p-0">
                     <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center">
@@ -83,7 +84,7 @@ export function AppBanners() {
           {comingSoonApps.map((app, index) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
-              <div key={`coming-soon-${index}`} className="w-full max-w-4xl mx-auto">
+              <div key={`coming-soon-${index}`} className="w-full">
                 <Card className="overflow-hidden bg-muted/50 rounded-lg">
                   <CardContent className="p-0">
                     <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center">
@@ -112,6 +113,7 @@ export function AppBanners() {
               </div>
             );
           })}
+        </div>
       </div>
     </section>
   );

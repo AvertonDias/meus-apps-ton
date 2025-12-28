@@ -118,7 +118,7 @@ export default function MeuOrcamentoPage() {
                         Do cálculo preciso de materiais ao envio de propostas profissionais, assuma o controle total.
                     </p>
                 </div>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                     {features.map((feature) => (
                         <Card key={feature.title} className="flex flex-col">
                             <CardHeader className="flex flex-row items-center gap-4">
@@ -170,7 +170,7 @@ export default function MeuOrcamentoPage() {
         </section>
         
         <section id="faq" className="py-16 sm:py-24">
-            <div className="container mx-auto">
+            <div className="container">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
