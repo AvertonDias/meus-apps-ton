@@ -3,103 +3,85 @@
     {
       "id": "hero-background",
       "description": "Abstract background with blue and purple gradients.",
-      "imageUrl": "https://images.unsplash.com/photo-1604076913837-52ab5629fba9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGdyYWRpZW50fGVufDB8fHx8MTc2MzIyNzkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBncmFkaWVudHxlbnwwfHx8fDE3NjY4Mzc3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract gradient"
-    },
-    {
-      "id": "app-icon-1",
-      "description": "Icon for a productivity app.",
-      "imageUrl": "https://images.unsplash.com/photo-1611162618828-bc409f073cbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcHAlMjBpY29ufGVufDB8fHx8MTc2MzI3MzAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "app icon"
-    },
-    {
-      "id": "app-icon-2",
-      "description": "Icon for a social media app.",
-      "imageUrl": "https://images.unsplash.com/photo-1737619285967-f3e96858b7af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXBwJTIwaWNvbnxlbnwwfHx8fDE3NjMyNzMwMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "app icon"
-    },
-    {
-      "id": "app-icon-3",
-      "description": "Icon for a finance app.",
-      "imageUrl": "https://images.unsplash.com/photo-1737619285988-e6f0f43a9981?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhcHAlMjBpY29ufGVufDB8fHx8MTc2MzI3MzAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "app icon"
     },
     {
       "id": "user-avatar-1",
       "description": "Avatar of a user.",
-      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjMyNTYwOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY2ODY5ODYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "user-avatar-2",
       "description": "Avatar of a user.",
-      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzMjU2MDkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4Njk4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "user-avatar-3",
       "description": "Avatar of a user.",
-      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjMyNTYwOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4Njk4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "banner-de-casa-em-casa",
       "description": "Banner para o aplicativo De Casa em Casa",
-      "imageUrl": "https://images.unsplash.com/photo-1580709430621-697349bd4bb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3ZpbmclMjBob3VzZXxlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1730154838368-c37b1fdebcf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3ZpbmclMjBob3VzZXxlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "moving house"
     },
     {
       "id": "banner-meu-orcamento",
       "description": "Banner para o aplicativo Meu Orçamento",
-      "imageUrl": "https://images.unsplash.com/photo-1723785735443-16ffd373f398?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwY2hhcnR8ZW58MHx8fHwxNzY2NzcwMjMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1745509267945-b25cbb4d50ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwY2hhcnR8ZW58MHx8fHwxNzY2ODgxOTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance chart"
     },
     {
       "id": "banner-lista-facil",
       "description": "Banner para o aplicativo Lista Fácil",
-      "imageUrl": "https://images.unsplash.com/photo-1623265301442-f4a98db77ab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaG9wcGluZyUyMGxpc3R8ZW58MHx8fHwxNzY2ODY2NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1766300835954-ae599aff59dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2hvcHBpbmclMjBsaXN0fGVufDB8fHx8MTc2Njg2NjU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "shopping list"
     },
     {
       "id": "banner-coming-soon",
       "description": "Banner de em breve",
-      "imageUrl": "https://images.unsplash.com/photo-1557264337-e8a93017fe92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY2ODU0MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1669295384050-a1d4357bd1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY2ODU0MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract tech"
     },
     {
       "id": "de-casa-em-casa-hero",
       "description": "Imagem de fundo da página do aplicativo De Casa em Casa",
-      "imageUrl": "https://images.unsplash.com/photo-1624137308703-e1da1ca881df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW92aW5nJTIwYm94ZXN8ZW58MHx8fHwxNzY2ODY2NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1730154838368-c37b1fdebcf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3ZpbmclMjBib3hlc3xlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "moving boxes"
     },
     {
       "id": "meu-orcamento-hero",
       "description": "Imagem de fundo da página do aplicativo Meu Orçamento",
-      "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjY3OTU1Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1707157284454-553ef0a4ed0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjY3OTU1Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial planning"
     },
     {
       "id": "lista-facil-hero",
       "description": "Imagem de fundo da página do aplicativo Lista Fácil",
-      "imageUrl": "https://images.unsplash.com/photo-1584771145729-0bd9fda6529b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JvY2VyeSUyMHN0b3JlfGVufDB8fHx8MTc2NjgxMzE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578916171728-46686eac8d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncm9jZXJ5JTIwc3RvcmV8ZW58MHx8fHwxNzY2ODEzMTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "grocery store"
     },
     {
       "id": "de-casa-em-casa-screenshot-1",
       "description": "Captura de tela 1 do De Casa em Casa",
-      "imageUrl": "https://images.unsplash.com/photo-1654764450232-d0724be6dcd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcHAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY2ODMyNDM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1654764449734-bc2d2a2cece2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXBwJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NjgzMjQzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "app interface"
     },
     {
       "id": "de-casa-em-casa-screenshot-2",
       "description": "Captura de tela 2 do De Casa em Casa",
-      "imageUrl": "https://images.unsplash.com/photo-1623265300797-4a3541e29a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcHAlMjBjaGVja2xpc3R8ZW58MHx8fHwxNzY2ODY2NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1648521769638-ca9fc1ac698c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXBwJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2Njg2NjU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "app checklist"
     },
     {
       "id": "meu-orcamento-screenshot-1",
       "description": "Captura de tela 1 do Meu Orçamento",
-      "imageUrl": "https://images.unsplash.com/photo-1652422485224-102f6784c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcHAlMjBjaGFydHxlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620365744528-88da1e08ac96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcHAlMjBjaGFydHxlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "app chart"
     },
     {
@@ -111,13 +93,13 @@
     {
       "id": "lista-facil-screenshot-1",
       "description": "Captura de tela 1 do Lista Fácil",
-      "imageUrl": "https://images.unsplash.com/photo-1621691187532-bbeb671757ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcHAlMjBsaXN0fGVufDB8fHx8MTc2Njg2NjU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1750163564876-214ff365bd47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcHAlMjBsaXN0fGVufDB8fHx8MTc2Njg2NjU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "app list"
     },
     {
       "id": "lista-facil-screenshot-2",
       "description": "Captura de tela 2 do Lista Fácil",
-      "imageUrl": "https://images.unsplash.com/photo-1607203391514-b001be773a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcHAlMjBpdGVtc3xlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1735755642468-fac9355f5958?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcHAlMjBpdGVtc3xlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "app items"
     }
   ]
