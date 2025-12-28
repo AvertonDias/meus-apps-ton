@@ -46,7 +46,7 @@ export function AppBanners() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 md:grid-cols-1">
           {apps.map((app) => {
             const image = PlaceHolderImages.find((img) => img.id === app.imageUrlId);
             return (
