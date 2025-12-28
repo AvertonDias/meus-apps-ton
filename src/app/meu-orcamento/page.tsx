@@ -70,7 +70,7 @@ const faqs = [
     },
     {
         question: "Em quais dispositivos posso usar?",
-        answer: "O 'Meu Orçamento' é multiplataforma. Você pode instalar o aplicativo em celulares Android e também acessá-lo pelo navegador do seu computador ou tablet. Todos os dados são sincronizados em tempo real entre todos os seus dispositivos."
+        answer: "O 'Meu Orçamento' é multiplataforma. Você pode instalar o aplicativo em celulares Android e iOS e também acessá-lo pelo navegador do seu computador ou tablet. Todos os dados são sincronizados em tempo real entre todos os seus dispositivos."
     }
 ];
 
