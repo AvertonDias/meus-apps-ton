@@ -82,20 +82,18 @@ export default function MeuOrcamentoPage() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[60vh] min-h-[400px] w-full">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              fill
-              className="object-cover"
-              priority
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
-            <div className="container">
+        <section className="relative h-[60vh] min-h-[400px] w-full bg-gradient-to-t from-blue-900/80 via-blue-800/50 to-blue-900/80">
+          <div className="container h-full grid md:grid-cols-[1fr_auto_1fr] items-center">
+            <div className="hidden md:flex justify-end pr-8">
+                <Image
+                    src="/MeuOrcamento/MeuOrcamentoLogo.jpg"
+                    alt="Logotipo Meu Orçamento"
+                    width={150}
+                    height={150}
+                    className="rounded-full"
+                />
+            </div>
+            <div className="flex flex-col items-center text-center text-primary-foreground">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                 Meu Orçamento: Menos Burocracia, Mais Lucro.
               </h1>
@@ -107,6 +105,7 @@ export default function MeuOrcamentoPage() {
                   <PlayStoreButton href="#" />
                 </div>
             </div>
+            <div className="hidden md:block"></div>
           </div>
         </section>
 
