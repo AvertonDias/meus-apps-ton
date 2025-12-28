@@ -53,7 +53,7 @@ export function AppBanners() {
                 <Link href={app.href}>
                   <CardContent className="p-0">
                     <div className="flex flex-col md:flex-row items-center">
-                      <div className="p-6 flex-1">
+                      <div className="p-6 flex-1 text-left">
                         <h3 className="text-2xl font-bold">{app.name}</h3>
                         <p className="mt-2 text-base text-muted-foreground">{app.description}</p>
                         <Button variant="link" className="mt-4 px-0">
@@ -85,7 +85,7 @@ export function AppBanners() {
               <Card key={`coming-soon-${index}`} className="overflow-hidden bg-muted/50 rounded-lg w-full max-w-4xl">
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row items-center">
-                    <div className="p-6 flex-1">
+                    <div className="p-6 flex-1 text-left">
                       <h3 className="text-2xl font-bold flex items-center gap-2 text-muted-foreground">
                         <Clock className="h-5 w-5" />
                         {app.name}
