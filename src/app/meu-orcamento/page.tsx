@@ -7,7 +7,7 @@ import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Calculator, FileText, Users, Box, BarChartHorizontal, WifiOff, Cloud } from 'lucide-react';
+import { Calculator, FileText, Users, Box, BarChartHorizontal, Cloud } from 'lucide-react';
 
 
 const features = [
@@ -62,11 +62,15 @@ const faqs = [
     },
     {
         question: "É fácil cadastrar meus produtos e clientes?",
-        answer: "Sim! Você pode cadastrar produtos e serviços diretamente no catálogo, definindo preços e unidades. Para clientes, você pode adicioná-los manualmente ou importar contatos diretamente da agenda do seu celular com apenas um clique, economizando muito tempo."
+        answer: "Sim! Você pode cadastrar produtos e serviços diretamente no catálogo. Para clientes, você pode adicioná-los manualmente ou importar contatos diretamente da agenda do seu celular com apenas um clique."
     },
     {
         question: "Meus dados estão seguros na nuvem?",
-        answer: "Sim, a segurança é nossa prioridade. Seus dados são criptografados e armazenados de forma segura na nuvem, permitindo que você acesse suas informações de qualquer dispositivo com seu login e senha, sem se preocupar com perdas."
+        answer: "Sim. Seus dados são sincronizados de forma segura e automática na nuvem. Isso significa que, mesmo que você perca seu celular, suas informações estarão a salvo e acessíveis assim que você fizer login em um novo dispositivo."
+    },
+    {
+        question: "Em quais dispositivos posso usar?",
+        answer: "O 'Meu Orçamento' é multiplataforma. Você pode instalar o aplicativo em celulares Android e também acessá-lo pelo navegador do seu computador ou tablet. Todos os dados são sincronizados em tempo real entre todos os seus dispositivos."
     }
 ];
 
