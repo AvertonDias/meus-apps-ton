@@ -33,7 +33,7 @@
     {
       "id": "banner-meu-orcamento",
       "description": "Banner para o aplicativo Meu Orçamento",
-      "imageUrl": "https://images.unsplash.com/photo-1762427354251-f008b64dbc32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwY2hhcnR8ZW58MHx8fHwxNzY2ODgxOTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/MeuOrcamento/MeuOrcamentoLogo.jpg",
       "imageHint": "finance chart"
     },
     {
