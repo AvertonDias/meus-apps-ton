@@ -6,39 +6,39 @@ import { Footer } from '@/components/footer';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Users, Map, Shield, CheckCircle, BarChart2, Settings, UserCheck, Smartphone, Edit, FileText } from 'lucide-react';
+import { Users, Map, Shield, CheckCircle, BarChart2, Settings, UserCheck, Smartphone, Edit, FileText, BotMessageSquare, UserPlus, BookUser } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const features = [
   {
-    icon: UserCheck,
-    title: 'Gestão de Acessos Centralizada',
-    description: 'Publicadores solicitam acesso de forma simples. Administradores e dirigentes aprovam ou rejeitam os cadastros e gerenciam os diferentes perfis de usuário (Publicador, Servo, Dirigente) em uma tela intuitiva.',
+    icon: UserPlus,
+    title: 'Gestão de Acessos Simplificada',
+    description: 'Novos usuários solicitam acesso, e os administradores aprovam com um clique, definindo perfis (Publicador, Dirigente, Servo) para manter tudo organizado.',
   },
   {
     icon: Map,
     title: 'Territórios Urbanos e Rurais',
-    description: 'Organize territórios urbanos com quadras e casas, e acompanhe o progresso em tempo real. Para territórios rurais, utilize um diário de bordo para registrar cada visita e manter um histórico claro.',
+    description: 'Organize territórios urbanos com quadras e casas, ou use um diário de bordo para registrar o trabalho em territórios rurais, mantendo um histórico claro.',
   },
   {
     icon: CheckCircle,
-    title: 'Trabalho de Campo Simplificado',
-    description: 'Marque casas como trabalhadas com um clique e veja a atualização instantânea para toda a congregação. Reordene a lista de casas para seguir a rota da rua e otimizar o percurso.',
+    title: 'Trabalho de Campo em Tempo Real',
+    description: 'Marque casas como trabalhadas e veja o progresso ser atualizado instantaneamente para toda a congregação. Reordene a lista de casas para otimizar sua rota.',
   },
   {
-    icon: Shield,
-    title: 'Módulo de Administração Completo',
-    description: 'Designe territórios para publicadores, defina datas de devolução, envie lembretes e gere o relatório S-13 automaticamente com base nos dados do sistema.',
+    icon: BotMessageSquare,
+    title: 'Módulo de Administração Inteligente',
+    description: 'Designe territórios, defina datas de devolução, envie lembretes via WhatsApp e gere o relatório S-13 automaticamente com base nos dados do sistema.',
   },
   {
     icon: BarChart2,
     title: 'Estatísticas e Visão Geral',
-    description: 'Acesse gráficos sobre a cobertura dos territórios nos últimos meses e entenda o tempo médio para completar os trabalhos, ajudando no planejamento e na tomada de decisões.',
+    description: 'Acesse gráficos sobre a cobertura dos territórios, o tempo médio para completar os trabalhos e o histórico de designações para um planejamento eficiente.',
   },
   {
-    icon: Smartphone,
-    title: 'Acessibilidade e Experiência Offline',
-    description: 'Instale o app no seu dispositivo para acesso rápido. O sistema funciona offline, sincronizando os dados assim que a conexão com a internet for restabelecida. Personalize o tema (claro/escuro) e o tamanho da fonte.',
+    icon: BookUser,
+    title: 'Perfis de Usuário Flexíveis',
+    description: 'Cinco perfis de acesso (Administrador, Dirigente, Servo, Ajudante, Publicador) garantem que cada um veja apenas o que é necessário para sua função.',
   },
 ];
 
@@ -51,7 +51,7 @@ const faqs = [
         question: "O aplicativo funciona offline?",
         answer: "Sim! Você pode instalar o 'De Casa em Casa' no seu celular ou computador. Ele funciona mesmo sem conexão com a internet, sincronizando os dados assim que você se reconectar."
     },
-     {
+    {
         question: "Posso mudar a ordem das casas em uma quadra?",
         answer: "Sim! Use o botão 'Reordenar' para arrastar e soltar os números na sequência exata do seu percurso, otimizando seu trabalho de campo."
     },
@@ -157,18 +157,18 @@ export default function DeCasaEmCasaPage() {
         </section>
         
         <section id="faq" className="py-16 sm:py-24">
-            <div className="container max-w-3xl">
+            <div className="container">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
                         Tudo o que você precisa saber para começar.
                     </p>
                 </div>
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
                     {faqs.map((faq, index) =>(
                         <AccordionItem value={`item-${index+1}`} key={index}>
-                            <AccordionTrigger className="text-lg">{faq.question}</AccordionTrigger>
-                            <AccordionContent className="text-base text-muted-foreground">
+                            <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
+                            <AccordionContent className="text-base text-muted-foreground text-left">
                             {faq.answer}
                             </AccordionContent>
                         </AccordionItem>
