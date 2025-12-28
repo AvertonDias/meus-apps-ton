@@ -94,6 +94,9 @@ export function AppBanners() {
                           {app.name}
                         </h3>
                         <p className="mt-2 text-base text-muted-foreground">{app.description}</p>
+                        <Button variant="link" className="mt-4 px-0 invisible" disabled>
+                          &nbsp;
+                        </Button>
                       </div>
                       <div className="h-full opacity-30 p-6 flex justify-center md:justify-end">
                         {image && (
