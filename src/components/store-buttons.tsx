@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { FaApple, FaAndroid, FaWindows } from 'react-icons/fa';
@@ -8,7 +9,7 @@ export function PwaButton({ href, className }: { href: string, className?: strin
   return (
     <Button variant="outline" asChild className={cn("bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground", className)}>
       <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
-        <div className="flex -space-x-1">
+        <div className="flex gap-2">
           <FaApple className="h-5 w-5" />
           <FaAndroid className="h-5 w-5" />
           <FaWindows className="h-5 w-5" />
