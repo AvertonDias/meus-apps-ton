@@ -65,8 +65,8 @@ export function AppBanners() {
                         <Image
                           src={image.imageUrl}
                           alt={`Banner para ${app.name}`}
-                          width={600}
-                          height={400}
+                          width={400}
+                          height={200}
                           className="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105"
                           data-ai-hint={image.imageHint}
                         />
@@ -97,8 +97,8 @@ export function AppBanners() {
                         <Image
                           src={image.imageUrl}
                           alt={app.name}
-                          width={600}
-                          height={400}
+                          width={400}
+                          height={200}
                           className="object-cover h-full w-full"
                           data-ai-hint={image.imageHint}
                         />
