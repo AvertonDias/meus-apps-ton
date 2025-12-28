@@ -75,7 +75,7 @@ export default function DeCasaEmCasaPage() {
                 alt="Logotipo De Casa em Casa"
                 width={150}
                 height={150}
-                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 hidden md:block rounded-full"
+                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 hidden md:block"
             />
             <div className="mx-auto">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
@@ -152,7 +152,7 @@ export default function DeCasaEmCasaPage() {
         </section>
         
         <section id="faq" className="py-16 sm:py-24">
-            <div className="container text-center">
+            <div className="container mx-auto">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
