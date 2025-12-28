@@ -62,25 +62,13 @@ const faqs = [
 ]
 
 export default function DeCasaEmCasaPage() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'de-casa-em-casa-hero');
   const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('de-casa-em-casa-screenshot'));
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[50vh] min-h-[300px] w-full">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              fill
-              className="object-cover"
-              priority
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80" />
+        <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
             <div className="container">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
@@ -164,7 +152,7 @@ export default function DeCasaEmCasaPage() {
                         Tudo o que você precisa saber para começar.
                     </p>
                 </div>
-                <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+                <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto text-left">
                     {faqs.map((faq, index) =>(
                         <AccordionItem value={`item-${index+1}`} key={index}>
                             <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
