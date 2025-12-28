@@ -87,8 +87,16 @@ export default function MeuOrcamentoPage() {
       <Header />
       <main className="flex-1">
         <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-blue-900/80 via-blue-800/50 to-blue-900/80">
-            <div className="container h-full grid md:grid-cols-[1fr_auto_1fr] items-center">
-                <div className="hidden md:flex justify-end pr-8">
+            <div className="container h-full flex flex-col justify-center items-center text-center">
+                <div className="md:hidden mb-4">
+                    <Image
+                        src="/MeuOrcamento/MeuOrcamentoLogo.jpg"
+                        alt="Logotipo Meu Orçamento"
+                        width={100}
+                        height={100}
+                    />
+                </div>
+                <div className="hidden md:block absolute left-8 top-1/2 -translate-y-1/2">
                     <Image
                         src="/MeuOrcamento/MeuOrcamentoLogo.jpg"
                         alt="Logotipo Meu Orçamento"
@@ -96,7 +104,7 @@ export default function MeuOrcamentoPage() {
                         height={150}
                     />
                 </div>
-                <div className="flex flex-col items-center text-center text-primary-foreground">
+                <div className="flex flex-col items-center text-primary-foreground">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                     Meu Orçamento
                 </h1>
@@ -108,7 +116,6 @@ export default function MeuOrcamentoPage() {
                     <PlayStoreButton href="#" />
                     </div>
                 </div>
-                <div className="hidden md:block"></div>
             </div>
         </section>
 
