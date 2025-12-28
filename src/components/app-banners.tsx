@@ -55,8 +55,8 @@ export function AppBanners() {
                   <CardContent className="p-0">
                     <div className="grid md:grid-cols-2 items-center">
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold">{app.name}</h3>
-                        <p className="mt-2 text-muted-foreground">{app.description}</p>
+                        <h3 className="text-xl font-bold">{app.name}</h3>
+                        <p className="mt-2 text-sm text-muted-foreground">{app.description}</p>
                         <Button variant="link" className="mt-4 px-0">
                           Saiba Mais <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
@@ -66,8 +66,8 @@ export function AppBanners() {
                           <Image
                             src={image.imageUrl}
                             alt={`Banner para ${app.name}`}
-                            width={300}
-                            height={150}
+                            width={240}
+                            height={120}
                             className="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105"
                             data-ai-hint={image.imageHint}
                           />
@@ -87,19 +87,19 @@ export function AppBanners() {
                 <CardContent className="p-0">
                   <div className="grid md:grid-cols-2 items-center">
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold flex items-center gap-2 text-muted-foreground">
-                        <Clock className="h-6 w-6" />
+                      <h3 className="text-xl font-bold flex items-center gap-2 text-muted-foreground">
+                        <Clock className="h-5 w-5" />
                         {app.name}
                       </h3>
-                      <p className="mt-2 text-muted-foreground">{app.description}</p>
+                      <p className="mt-2 text-sm text-muted-foreground">{app.description}</p>
                     </div>
                     <div className="h-full w-full opacity-30 overflow-hidden">
                       {image && (
                           <Image
                             src={image.imageUrl}
                             alt={app.name}
-                            width={300}
-                            height={150}
+                            width={240}
+                            height={120}
                             className="object-cover h-full w-full"
                             data-ai-hint={image.imageHint}
                           />
