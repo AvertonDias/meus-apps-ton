@@ -7,58 +7,58 @@ import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Wallet, BarChart2, PiggyBank, Shield, Repeat, PlusCircle } from 'lucide-react';
+import { Calculator, FileText, Users, Box, BarChartHorizontal, Palette, WifiOff } from 'lucide-react';
 
 
 const features = [
   {
-    icon: PlusCircle,
-    title: 'Lançamentos Rápidos',
-    description: 'Registre suas receitas e despesas em segundos. A simplicidade que você precisa no dia a dia.',
+    icon: Calculator,
+    title: 'Conversor de Bobinas Inteligente',
+    description: 'Calcule o rendimento e o custo exato por metro de suas bobinas de metal, eliminando prejuízos e garantindo a margem de lucro.',
   },
   {
-    icon: BarChart2,
-    title: 'Gráficos Intuitivos',
-    description: 'Visualize para onde seu dinheiro está indo com gráficos claros e fáceis de entender.',
+    icon: FileText,
+    title: 'Orçamentos Profissionais em PDF',
+    description: 'Crie e envie propostas detalhadas com o logo da sua empresa em minutos, direto do app para o WhatsApp do cliente.',
   },
   {
-    icon: Wallet,
-    title: 'Múltiplas Carteiras',
-    description: 'Gerencie diferentes contas (corrente, poupança, investimentos) em um só lugar.',
+    icon: Users,
+    title: 'Gestão de Clientes (CRM)',
+    description: 'Importe contatos da sua agenda e mantenha um histórico completo de todos os orçamentos para cada cliente.',
   },
   {
-    icon: PiggyBank,
-    title: 'Metas de Economia',
-    description: 'Defina seus objetivos financeiros e acompanhe seu progresso para alcançá-los.',
+    icon: Box,
+    title: 'Controle de Estoque e Catálogo',
+    description: 'Cadastre produtos e serviços, defina preços e receba alertas de estoque baixo para nunca ser pego de surpresa.',
   },
   {
-    icon: Repeat,
-    title: 'Transações Recorrentes',
-    description: 'Agende despesas e receitas fixas, como aluguel e salário, para não precisar lançá-las todo mês.',
+    icon: BarChartHorizontal,
+    title: 'Relatórios Detalhados',
+    description: 'Gere relatórios para o cliente (só com preço de venda) e para você (com custos, margens e lucro total).',
   },
   {
-    icon: Shield,
-    title: '100% Offline e Seguro',
-    description: 'Seus dados financeiros ficam armazenados apenas no seu dispositivo, garantindo total privacidade.',
+    icon: WifiOff,
+    title: 'Funcionalidade Offline',
+    description: 'Crie e edite orçamentos em qualquer lugar, mesmo sem conexão com a internet. Os dados são sincronizados automaticamente.',
   },
 ];
 
 const faqs = [
     {
-        question: "Meus dados financeiros estão seguros?",
-        answer: "Sim. O 'Meu Orçamento' funciona 100% offline. Todos os seus dados são armazenados localmente, apenas no seu celular ou computador. Nenhuma informação é enviada para a internet."
+        question: "O aplicativo funciona sem internet?",
+        answer: "Sim! O 'Meu Orçamento' foi pensado para o dia a dia em campo. Você pode criar, editar e gerenciar orçamentos completamente offline. Assim que você se conectar à internet, os dados são sincronizados automaticamente."
     },
     {
-        question: "Posso usar o app em mais de um dispositivo?",
-        answer: "Como o foco é na privacidade e no armazenamento local, o aplicativo não sincroniza dados entre dispositivos automaticamente. Você pode usá-lo em vários aparelhos, mas cada um terá seus próprios dados."
+        question: "Como funciona o conversor de bobinas?",
+        answer: "É simples. Você insere os dados da bobina (peso, largura, espessura e tipo de metal) e o nosso sistema calcula o comprimento exato (rendimento) e o custo preciso por metro. Isso garante que você nunca mais tenha prejuízo ao precificar materiais."
     },
     {
-        question: "O aplicativo tem custos ou anúncios?",
-        answer: "Não. O 'Meu Orçamento' é totalmente gratuito e não exibe nenhum tipo de anúncio, proporcionando uma experiência limpa e focada na gestão das suas finanças."
+        question: "Posso personalizar os orçamentos com a minha marca?",
+        answer: "Com certeza. Você pode adicionar o logotipo da sua empresa, que aparecerá em todos os orçamentos em PDF que você enviar, transmitindo muito mais profissionalismo aos seus clientes."
     },
     {
-        question: "Consigo exportar meus dados?",
-        answer: "Atualmente, a funcionalidade de exportação não está implementada, mas é um recurso planejado para futuras atualizações, visando dar a você ainda mais controle sobre suas informações."
+        question: "Como o app me ajuda a controlar o lucro?",
+        answer: "Para cada orçamento, o aplicativo gera um relatório interno (visível apenas para você) que detalha os custos de materiais e mão de obra, a margem aplicada e o lucro total do projeto. Isso te dá uma visão clara da saúde financeira do seu negócio."
     }
 ];
 
@@ -70,7 +70,7 @@ export default function MeuOrcamentoPage() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <section className="relative h-[50vh] min-h-[300px] w-full">
+        <section className="relative h-[60vh] min-h-[400px] w-full">
           {heroImage && (
             <Image
               src={heroImage.imageUrl}
@@ -81,14 +81,14 @@ export default function MeuOrcamentoPage() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
             <div className="container">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                Meu Orçamento
+                Meu Orçamento: O App para Profissionais de Serviço
               </h1>
-              <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/80">
-                Tome o controle das suas finanças pessoais de forma simples e visual.
+              <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-primary-foreground/80">
+                A ferramenta definitiva para serralheiros, calheiros e autônomos que buscam mais lucro e menos burocracia.
               </p>
                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                   <PwaButton href="https://meuorcamento.vercel.app/" />
@@ -101,9 +101,9 @@ export default function MeuOrcamentoPage() {
         <section id="features" className="py-16 sm:py-24">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Recursos para sua Saúde Financeira</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades que Vão Revolucionar sua Rotina</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu dinheiro.
+                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu negócio.
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -125,9 +125,9 @@ export default function MeuOrcamentoPage() {
         <section id="gallery" className="py-16 sm:py-24 bg-secondary">
              <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Visualize Suas Finanças</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Visualize o App em Ação</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Acompanhe seus gastos e metas com uma interface clara e objetiva.
+                        Uma interface clara e objetiva para gerenciar seu negócio com eficiência.
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
@@ -160,9 +160,9 @@ export default function MeuOrcamentoPage() {
         <section id="faq" className="py-16 sm:py-24">
             <div className="container mx-auto">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Importantes</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                       Sua privacidade e controle em primeiro lugar.
+                       Respostas para as dúvidas mais comuns dos profissionais.
                     </p>
                 </div>
                 <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto text-left">
