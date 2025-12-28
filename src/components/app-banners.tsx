@@ -16,7 +16,7 @@ const apps = [
   {
     id: 'meu-orcamento',
     name: 'Meu Orçamento',
-    description: 'Tome o controle das suas finanças pessoais. Acompanhe despesas, crie metas e visualize seus gastos.',
+    description: 'A ferramenta definitiva para serralheiros e autônomos que buscam mais lucro e menos burocracia.',
     imageUrlId: 'banner-meu-orcamento',
     href: '/meu-orcamento',
   },
