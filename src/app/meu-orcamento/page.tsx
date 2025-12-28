@@ -59,6 +59,18 @@ const faqs = [
     {
         question: "Como o app me ajuda a controlar o lucro?",
         answer: "Para cada orçamento, o aplicativo gera um relatório interno (visível apenas para você) que detalha os custos de materiais e mão de obra, a margem aplicada e o lucro total do projeto. Isso te dá uma visão clara da saúde financeira do seu negócio."
+    },
+    {
+        question: "É fácil cadastrar meus produtos e clientes?",
+        answer: "Sim! Você pode cadastrar produtos e serviços diretamente no catálogo, definindo preços e unidades. Para clientes, você pode adicioná-los manualmente ou importar contatos diretamente da agenda do seu celular com apenas um clique, economizando muito tempo."
+    },
+    {
+        question: "Os dados que eu insiro no aplicativo estão seguros?",
+        answer: "Totalmente. O 'Meu Orçamento' funciona offline, o que significa que todas as suas informações (clientes, produtos, orçamentos e relatórios) são armazenadas localmente, apenas no seu dispositivo. Ninguém mais tem acesso a eles, garantindo sua total privacidade e segurança."
+    },
+    {
+        question: "O aplicativo tem algum tipo de suporte ou ajuda?",
+        answer: "Sim. Dentro do aplicativo, você encontrará uma seção de ajuda e tutoriais para guiá-lo nas principais funcionalidades. Além disso, oferecemos um canal de suporte direto para tirar dúvidas e receber sugestões."
     }
 ];
 
@@ -101,9 +113,9 @@ export default function MeuOrcamentoPage() {
         <section id="features" className="py-16 sm:py-24">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Menos Burocracia, Mais Lucro.</h2>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Funcionalidades que Vão Revolucionar sua Rotina</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu negócio, mesmo offline.
+                        Ferramentas poderosas e fáceis de usar para você assumir o controle do seu negócio.
                     </p>
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -183,3 +195,5 @@ export default function MeuOrcamentoPage() {
     </div>
   );
 }
+
+    
