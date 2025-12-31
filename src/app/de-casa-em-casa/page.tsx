@@ -264,7 +264,7 @@ export default function DeCasaEmCasaPage() {
                                     onWheel={handleWheel}
                                     onPan={handlePan}
                                     drag={scale > 1}
-                                    dragConstraints={{ left: -200, right: 200, top: -200, bottom: 200 }}
+                                    dragConstraints={{ left: false, right: false, top: false, bottom: false }}
                                     dragElastic={0.2}
                                 >
                                     <Image 
