@@ -218,17 +218,18 @@ export default function DeCasaEmCasaPage() {
                             <CarouselPrevious className="hidden md:flex -left-12" />
                             <CarouselNext className="hidden md:flex -right-12" />
                         </Carousel>
-                        {selectedImageUrl && (
-                          <DialogContent 
-                            className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
-                            onInteractOutside={() => setSelectedImageIndex(null)}
-                          >
-                             <div className="sr-only">
-                                <DialogTitle>Visualização de Imagem</DialogTitle>
-                                <DialogDescription>
-                                    Imagem da captura de tela do aplicativo ampliada para melhor visualização.
-                                </DialogDescription>
-                            </div>
+                        
+                        <DialogContent 
+                          className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
+                          onInteractOutside={() => setSelectedImageIndex(null)}
+                        >
+                           <div className="sr-only">
+                              <DialogTitle>Visualização de Imagem</DialogTitle>
+                              <DialogDescription>
+                                  Imagem da captura de tela do aplicativo ampliada para melhor visualização.
+                              </DialogDescription>
+                          </div>
+                          {selectedImageUrl && (
                             <div className="relative w-full h-full">
                                 <Image 
                                   src={selectedImageUrl}
@@ -256,8 +257,8 @@ export default function DeCasaEmCasaPage() {
                                     <span className="sr-only">Próxima</span>
                                 </Button>
                             </div>
-                          </DialogContent>
-                        )}
+                          )}
+                        </DialogContent>
                     </Dialog>
                 </div>
             </div>
