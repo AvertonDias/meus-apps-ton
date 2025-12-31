@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -7,9 +8,18 @@ export function Hero() {
 
   return (
     <section
-      className="relative h-[60vh] min-h-[400px] w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: heroImage ? `url(${heroImage.imageUrl})` : 'none' }}
+      className="relative h-[60vh] min-h-[400px] w-full"
     >
+      {heroImage && (
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
+          fill
+          priority
+          className="object-cover object-top"
+        />
+      )}
+      <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
         <div className="container">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
