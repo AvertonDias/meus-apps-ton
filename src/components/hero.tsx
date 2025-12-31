@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#051937] py-20 px-4">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-hero-gradient py-20 px-4">
       {/* Elementos de fundo (Efeito de luz/Blur) */}
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 rounded-full blur-[120px]" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-cyan-500/10 rounded-full blur-[120px]" />
