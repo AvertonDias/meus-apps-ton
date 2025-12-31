@@ -31,7 +31,7 @@ export function PwaButton({ href, className }: { href: string, className?: strin
           </div>
           <div className="flex flex-col items-start leading-tight">
             <span className="text-[10px] uppercase tracking-widest opacity-80 font-bold">Acesso Direto</span>
-            <span className="text-base font-bold">Abrir Web App</span>
+            <span className="text-base font-bold">Abrir App</span>
           </div>
         </a>
       </Button>
