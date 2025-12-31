@@ -1,13 +1,6 @@
 'use client';
 
-import { Metadata } from 'next';
 import { motion } from 'framer-motion';
-
-// Metadata for SEO
-export const metadata: Metadata = {
-  title: 'Política de Privacidade',
-  description: 'Entenda como seus dados são coletados, usados e protegidos pela Ton Apps.',
-};
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <motion.div
