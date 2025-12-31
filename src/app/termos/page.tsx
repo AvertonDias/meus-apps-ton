@@ -20,7 +20,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 );
 
 export default function TermosPage() {
-  const lastUpdated = "25 de Julho de 2024";
+  const lastUpdated = "25 de Julho de 2025";
 
   return (
     <div className="bg-slate-50 dark:bg-[#020817] py-24 sm:py-32">
