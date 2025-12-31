@@ -73,8 +73,8 @@ export default function SobrePage() {
               >
                 {creatorAvatar && (
                   <Avatar className="mx-auto h-64 w-64 md:h-80 md:w-80 border-8 border-white dark:border-slate-900 shadow-2xl">
-                    <AvatarImage src={creatorAvatar.imageUrl} alt="Wellington, o criador da Ton Apps" />
-                    <AvatarFallback className="bg-blue-600 text-6xl text-white">W</AvatarFallback>
+                    <AvatarImage src={creatorAvatar.imageUrl} alt="Averton, o criador da Ton Apps" />
+                    <AvatarFallback className="bg-blue-600 text-6xl text-white">A</AvatarFallback>
                   </Avatar>
                 )}
                  <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-pulse" />
@@ -87,7 +87,7 @@ export default function SobrePage() {
               >
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight">O Criador</h2>
                 <p className="mt-6 text-lg text-muted-foreground">
-                  Olá! Eu sou Wellington, um desenvolvedor de sistemas autodidata e o fundador da Ton Apps. Minha jornada na programação começou com uma curiosidade insaciável e se transformou em uma carreira dedicada a resolver problemas reais através de software.
+                  Olá! Eu sou o Averton, um desenvolvedor de sistemas autodidata e o fundador da Ton Apps. Minha jornada na programação começou com uma curiosidade insaciável e se transformou em uma carreira dedicada a resolver problemas reais através de software.
                 </p>
                 <p className="mt-4 text-muted-foreground">
                   Com foco em tecnologias modernas como Next.js, React e Firebase, busco criar aplicativos que não sejam apenas funcionais, mas também bonitos, intuitivos e acessíveis. Cada projeto é um novo desafio e uma oportunidade de aprender e crescer.
