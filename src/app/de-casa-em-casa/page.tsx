@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 const features = [
   {
@@ -207,6 +207,12 @@ export default function DeCasaEmCasaPage() {
                         </Carousel>
                         {selectedImage && (
                           <DialogContent className="max-w-4xl p-0 border-none bg-transparent">
+                             <div className="sr-only">
+                                <DialogTitle>Visualização de Imagem</DialogTitle>
+                                <DialogDescription>
+                                    Imagem da captura de tela do aplicativo ampliada para melhor visualização.
+                                </DialogDescription>
+                            </div>
                             <Image 
                               src={selectedImage}
                               alt="Screenshot ampliado"
@@ -272,5 +278,3 @@ export default function DeCasaEmCasaPage() {
     </div>
   );
 }
-
-    
