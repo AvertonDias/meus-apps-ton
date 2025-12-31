@@ -275,15 +275,6 @@ export default function DeCasaEmCasaPage() {
                                       className="object-contain h-full w-auto rounded-lg pointer-events-none"
                                     />
                                 </motion.div>
-                                <Button
-                                  variant="ghost"
-                                  size="icon"
-                                  onClick={resetZoom}
-                                  className="absolute top-4 right-14 bg-white/80 hover:bg-white text-black rounded-full"
-                                >
-                                  <RotateCw className="h-4 w-4"/>
-                                  <span className="sr-only">Resetar Zoom</span>
-                                </Button>
                             </div>
                           )}
                         </DialogContent>
