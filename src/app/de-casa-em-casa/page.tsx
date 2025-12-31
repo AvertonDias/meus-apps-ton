@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -12,6 +13,7 @@ import {
 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const features = [
   {
@@ -73,6 +75,7 @@ const faqs = [
 
 export default function DeCasaEmCasaPage() {
   const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('de-casa-em-casa-screenshot'));
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
@@ -119,7 +122,7 @@ export default function DeCasaEmCasaPage() {
               >
                 <div className="relative z-10 p-4 bg-white/5 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-2xl">
                    <Image
-                      src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
+                      src="/DeCasaEmCasa/Imagens/01.png"
                       alt="Logotipo De Casa em Casa"
                       width={400}
                       height={400}
@@ -169,36 +172,51 @@ export default function DeCasaEmCasaPage() {
             </div>
         </section>
         
-        {/* GALERIA COM MOCKUPS */}
+        {/* GALERIA COM MOCKUPS E ZOOM */}
         <section id="gallery" className="w-full py-24 border-y border-slate-100 dark:border-slate-800">
              <div className="container px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight italic">O App em Suas Mãos</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground text-center">
-                        Interface limpa, rápida e intuitiva. Veja como o De Casa em Casa se adapta ao seu dispositivo.
+                        Interface limpa, rápida e intuitiva. Clique para ampliar e veja os detalhes.
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <Carousel className="w-full max-w-5xl">
-                        <CarouselContent>
-                        {screenshots.map((shot) => (
-                            <CarouselItem key={shot.id} className="md:basis-1/2 lg:basis-1/3 p-4">
-                              <div className="relative group overflow-hidden rounded-[2rem] border-8 border-slate-900 shadow-2xl">
-                                <Image
-                                    src={shot.imageUrl}
-                                    alt={`Captura de tela`}
-                                    width={400}
-                                    height={800}
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                              </div>
-                            </CarouselItem>
-                        ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex -left-12" />
-                        <CarouselNext className="hidden md:flex -right-12" />
-                    </Carousel>
+                    <Dialog>
+                        <Carousel className="w-full max-w-5xl">
+                            <CarouselContent>
+                            {screenshots.map((shot) => (
+                                <CarouselItem key={shot.id} className="md:basis-1/2 lg:basis-1/3 p-4">
+                                    <DialogTrigger asChild onClick={() => setSelectedImage(shot.imageUrl)}>
+                                        <div className="relative group overflow-hidden rounded-[2rem] border-8 border-slate-900 shadow-2xl cursor-pointer">
+                                            <Image
+                                                src={shot.imageUrl}
+                                                alt={`Captura de tela`}
+                                                width={400}
+                                                height={800}
+                                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                                        </div>
+                                    </DialogTrigger>
+                                </CarouselItem>
+                            ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="hidden md:flex -left-12" />
+                            <CarouselNext className="hidden md:flex -right-12" />
+                        </Carousel>
+                        {selectedImage && (
+                          <DialogContent className="max-w-4xl p-0 border-none bg-transparent">
+                            <Image 
+                              src={selectedImage}
+                              alt="Screenshot ampliado"
+                              width={800}
+                              height={1600}
+                              className="w-full h-auto object-contain rounded-lg"
+                            />
+                          </DialogContent>
+                        )}
+                    </Dialog>
                 </div>
             </div>
         </section>
@@ -254,3 +272,5 @@ export default function DeCasaEmCasaPage() {
     </div>
   );
 }
+
+    
