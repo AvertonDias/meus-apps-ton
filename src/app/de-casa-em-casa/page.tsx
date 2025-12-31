@@ -76,19 +76,7 @@ const faqs = [
 
 export default function DeCasaEmCasaPage() {
   const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('de-casa-em-casa-screenshot'));
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
-
-  const handleNext = () => {
-    if (selectedImageIndex === null) return;
-    setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex + 1) % screenshots.length));
-  };
-
-  const handlePrevious = () => {
-    if (selectedImageIndex === null) return;
-    setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex - 1 + screenshots.length) % screenshots.length));
-  };
-  
-  const selectedImageUrl = selectedImageIndex !== null ? screenshots[selectedImageIndex]?.imageUrl : null;
+  const [selectedImageUrl, setSelectedImageUrl] = useState<string | null>(null);
 
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
@@ -195,12 +183,12 @@ export default function DeCasaEmCasaPage() {
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <Dialog onOpenChange={(isOpen) => !isOpen && setSelectedImageIndex(null)}>
+                    <Dialog onOpenChange={(isOpen) => !isOpen && setSelectedImageUrl(null)}>
                         <Carousel className="w-full max-w-5xl">
                             <CarouselContent>
                             {screenshots.map((shot, index) => (
                                 <CarouselItem key={shot.id} className="md:basis-1/2 lg:basis-1/3 p-4">
-                                    <DialogTrigger asChild onClick={() => setSelectedImageIndex(index)}>
+                                    <DialogTrigger asChild onClick={() => setSelectedImageUrl(shot.imageUrl)}>
                                         <div className="relative group overflow-hidden rounded-[2rem] border-8 border-slate-900 shadow-2xl cursor-pointer">
                                             <Image
                                                 src={shot.imageUrl}
@@ -220,7 +208,7 @@ export default function DeCasaEmCasaPage() {
                         </Carousel>
                         
                         <DialogContent 
-                          className="max-w-none w-[90vw] md:w-auto h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
+                          className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
                         >
                            <div className="sr-only">
                               <DialogTitle>Visualização de Imagem</DialogTitle>
@@ -229,33 +217,13 @@ export default function DeCasaEmCasaPage() {
                               </DialogDescription>
                           </div>
                           {selectedImageUrl && (
-                            <div className="relative w-full h-full">
-                                <Image 
-                                  src={selectedImageUrl}
-                                  alt="Screenshot ampliado"
-                                  layout="fill"
-                                  objectFit="contain"
-                                  className="rounded-lg"
-                                />
-                                <Button
-                                    variant="ghost"
-                                    size="icon"
-                                    onClick={(e) => { e.stopPropagation(); handlePrevious(); }}
-                                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full text-black"
-                                >
-                                    <ChevronLeft className="h-6 w-6" />
-                                    <span className="sr-only">Anterior</span>
-                                </Button>
-                                <Button
-                                    variant="ghost"
-                                    size="icon"
-                                    onClick={(e) => { e.stopPropagation(); handleNext(); }}
-                                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full text-black"
-                                >
-                                    <ChevronRight className="h-6 w-6" />
-                                    <span className="sr-only">Próxima</span>
-                                </Button>
-                            </div>
+                            <Image 
+                              src={selectedImageUrl}
+                              alt="Screenshot ampliado"
+                              width={400}
+                              height={800}
+                              className="object-contain h-full w-auto rounded-lg"
+                            />
                           )}
                         </DialogContent>
                     </Dialog>
