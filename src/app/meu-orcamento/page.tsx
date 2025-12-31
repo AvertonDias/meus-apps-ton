@@ -1,3 +1,4 @@
+
 'use client'
 
 import Image from 'next/image';
@@ -12,6 +13,7 @@ import {
   Calculator, FileText, Users, Box, BarChartHorizontal, 
   Cloud, Sparkles, CheckCircle2, TrendingUp, Smartphone
 } from 'lucide-react';
+import Link from 'next/link';
 
 const features = [
   { 
@@ -150,7 +152,7 @@ export default function MeuOrcamentoPage() {
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: idx * 0.2 }}
+                          transition={{ delay: idx * 0.1 }}
                         >
                           <Card className="h-full border-none shadow-md hover:shadow-xl transition-all dark:bg-slate-900/40">
                               <CardHeader>
@@ -213,8 +215,10 @@ export default function MeuOrcamentoPage() {
                Comece hoje a enviar orçamentos profissionais e tenha o controle total da sua lucratividade.
              </p>
              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-xl px-10 py-8 rounded-2xl shadow-2xl font-bold transition-transform active:scale-95">
-                  Fazer meu Primeiro Orçamento
+                <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-blue-50 text-xl px-10 py-8 rounded-2xl shadow-2xl font-bold transition-transform active:scale-95">
+                  <a href="https://meuorcamento.vercel.app/register" target="_blank" rel="noopener noreferrer">
+                    Fazer meu Primeiro Orçamento
+                  </a>
                 </Button>
                 <div className="flex flex-col items-start justify-center gap-2 text-white/80 text-sm">
                    <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> 100% Gratuito</div>
@@ -228,5 +232,3 @@ export default function MeuOrcamentoPage() {
     </div>
   );
 }
-
-    
