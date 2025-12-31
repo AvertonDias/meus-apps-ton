@@ -26,7 +26,7 @@ const apps = [
     description: 'A ferramenta definitiva para serralheiros e autônomos que buscam mais lucro e menos burocracia no dia a dia.',
     imageUrlId: 'banner-meu-orcamento',
     href: '/meu-orcamento',
-    color: 'bg-[#3382B2]'
+    color: 'bg-[#5F9ECB]'
   },
   {
     id: 'lista-facil',
