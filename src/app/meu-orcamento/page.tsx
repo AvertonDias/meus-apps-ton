@@ -28,7 +28,7 @@ const features = [
   },
   { 
     icon: Users, 
-    title: 'Gestão de Clientes', _
+    title: 'Gestão de Clientes',
     description: 'Mantenha um histórico completo de orçamentos vinculado a cada cliente.',
     color: 'bg-indigo-500/10 text-indigo-500'
   },
