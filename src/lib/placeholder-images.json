@@ -2,9 +2,8 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Abstract background with blue and purple gradients.",
-      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBncmFkaWVudHxlbnwwfHx8fDE3NjY4Mzc3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract gradient"
+      "description": "Banner principal do site Ton Apps",
+      "imageUrl": "/Site img/Banner site 1.jpeg"
     },
     {
       "id": "user-avatar-1",
