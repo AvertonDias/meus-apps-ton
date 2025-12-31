@@ -1,23 +1,58 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { cn } from '@/lib/utils';
 
 const inter = Inter({ 
   subsets: ['latin'], 
-  variable: '--font-inter',
+  variable: '--font-sans',
   display: 'swap',
 });
 
+export const viewport: Viewport = {
+  themeColor: '#051937',
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: {
-    default: 'Ton Apps',
+    default: 'Ton Apps | Soluções Inteligentes',
     template: '%s | Ton Apps',
   },
-  description: 'Apresente seus aplicativos com visuais atraentes e descrições concisas.',
-  applicationName: 'Ton Apps',
+  description: 'Descubra aplicativos práticos e inovadores para simplificar sua rotina e aumentar sua produtividade.',
+  keywords: ['aplicativos', 'produtividade', 'organização', 'ton apps', 'soluções digitais'],
+  authors: [{ name: 'Ton Apps' }],
+  creator: 'Ton Apps',
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://de-casa-em-casa-gilt.vercel.app/',
+    title: 'Ton Apps | Soluções Inteligentes',
+    description: 'Simplifique suas tarefas diárias com nossos aplicativos inovadores.',
+    siteName: 'Ton Apps',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Preview Ton Apps',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ton Apps',
+    description: 'Simplifique sua rotina com nossos apps.',
+    images: ['/og-image.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -27,9 +62,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.variable} font-body antialiased flex flex-col min-h-screen`}>
+      <body 
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased flex flex-col",
+          inter.variable
+        )}
+      >
         <Header />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1 w-full overflow-x-hidden">
           {children}
         </main>
         <Footer />
