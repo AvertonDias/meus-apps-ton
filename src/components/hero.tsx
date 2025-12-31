@@ -16,7 +16,7 @@ export function Hero() {
           alt={heroImage.description}
           fill
           priority
-          className="object-cover object-top"
+          className="object-cover object-left-top"
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
