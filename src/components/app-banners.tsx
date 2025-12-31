@@ -17,7 +17,7 @@ const apps = [
     description: 'A ferramenta digital para organizar territórios, acompanhar o progresso em tempo real e otimizar o trabalho de campo.',
     imageUrlId: 'banner-de-casa-em-casa',
     href: '/de-casa-em-casa',
-    color: 'bg-[#2D318D]'
+    color: 'bg-[#6342C6]'
   },
   {
     id: 'meu-orcamento',
