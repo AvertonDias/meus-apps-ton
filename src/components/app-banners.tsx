@@ -26,7 +26,7 @@ const apps = [
     description: 'A ferramenta definitiva para serralheiros e autônomos que buscam mais lucro e menos burocracia no dia a dia.',
     imageUrlId: 'banner-meu-orcamento',
     href: '/meu-orcamento',
-    color: 'bg-gradient-to-br from-emerald-500/20 to-teal-500/20'
+    color: 'bg-[#3382B2]'
   },
   {
     id: 'lista-facil',
@@ -70,7 +70,7 @@ export function AppBanners() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
+                transition={{ delay: index * 0.4 }}
               >
                 <Link href={app.href} className="group block">
                   <Card className="overflow-hidden border-none shadow-sm group-hover:shadow-xl transition-all duration-500 bg-white dark:bg-slate-900/50 backdrop-blur-sm">
