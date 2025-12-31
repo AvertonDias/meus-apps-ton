@@ -14,6 +14,7 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import Link from 'next/link';
 
 const features = [
   {
@@ -87,7 +88,7 @@ export default function DeCasaEmCasaPage() {
     setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex - 1 + screenshots.length) % screenshots.length));
   };
 
-  const selectedImageUrl = selectedImageIndex !== null ? screenshots[selectedImageIndex].imageUrl : null;
+  const selectedImageUrl = selectedImageIndex !== null ? screenshots[selectedImageIndex]?.imageUrl : null;
 
 
   return (
@@ -300,8 +301,10 @@ export default function DeCasaEmCasaPage() {
                Junte-se a centenas de usuários que já otimizaram o trabalho de campo com eficiência e tecnologia.
              </p>
              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-7 rounded-2xl shadow-xl">
-                  Criar Conta Grátis
+                <Button size="lg" asChild className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-7 rounded-2xl shadow-xl">
+                  <Link href="https://de-casa-em-casa.vercel.app/nova-congregacao">
+                    Criar Conta Grátis
+                  </Link>
                 </Button>
                 <div className="flex items-center justify-center gap-4 text-white/80">
                   <div className="flex items-center gap-1"><CheckCircle2 className="w-5 h-5" /> Sem custos</div>
