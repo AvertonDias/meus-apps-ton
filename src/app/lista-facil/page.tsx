@@ -94,13 +94,19 @@ export default function ListaFacilPage() {
                   {/* Círculo de Brilho */}
                   <div className="absolute inset-0 bg-emerald-500/20 rounded-full blur-3xl animate-pulse" />
         
-                  <div className="relative bg-slate-900/40 backdrop-blur-xl rounded-[3rem] p-16 border border-white/10 shadow-2xl overflow-hidden">
+                  <div className="relative bg-slate-900/40 backdrop-blur-xl rounded-[3rem] p-8 border border-white/10 shadow-2xl overflow-hidden">
                     {/* Ícones flutuantes decorativos */}
                     <motion.div
                       animate={{ y: [0, -20, 0] }}
                       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     >
-                      <ShoppingCart className="w-40 h-40 text-emerald-400" strokeWidth={1} />
+                      <Image 
+                        src="/ListaFacil/ListaFacilLogo.png" 
+                        alt="Lista Fácil Logo" 
+                        width={200}
+                        height={200}
+                        className="drop-shadow-2xl"
+                      />
                     </motion.div>
         
                     {/* QR Code Decorativo menor flutuando ao lado */}
