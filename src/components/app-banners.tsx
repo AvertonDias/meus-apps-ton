@@ -17,7 +17,7 @@ const apps = [
     description: 'A ferramenta digital para organizar territórios, acompanhar o progresso em tempo real e otimizar o trabalho de campo.',
     imageUrlId: 'banner-de-casa-em-casa',
     href: '/de-casa-em-casa',
-    color: 'from-blue-500/20 to-cyan-500/20'
+    color: 'bg-[#2D318D]'
   },
   {
     id: 'meu-orcamento',
@@ -26,7 +26,7 @@ const apps = [
     description: 'A ferramenta definitiva para serralheiros e autônomos que buscam mais lucro e menos burocracia no dia a dia.',
     imageUrlId: 'banner-meu-orcamento',
     href: '/meu-orcamento',
-    color: 'from-emerald-500/20 to-teal-500/20'
+    color: 'bg-gradient-to-br from-emerald-500/20 to-teal-500/20'
   },
   {
     id: 'lista-facil',
@@ -35,7 +35,7 @@ const apps = [
     description: 'Crie e compartilhe listas de compras de forma inteligente. Nunca mais esqueça um item essencial no mercado.',
     imageUrlId: 'banner-lista-facil',
     href: '/lista-facil',
-    color: 'from-orange-500/20 to-yellow-500/20'
+    color: 'bg-gradient-to-br from-orange-500/20 to-yellow-500/20'
   },
 ];
 
@@ -96,7 +96,7 @@ export function AppBanners() {
                         </div>
                         
                         <div className={cn(
-                          "relative h-64 md:h-full min-h-[300px] flex items-center justify-center p-8 bg-gradient-to-br",
+                          "relative h-64 md:h-full min-h-[300px] flex items-center justify-center p-8",
                           app.color,
                           index % 2 === 0 ? "order-1" : "order-1 md:order-2"
                         )}>
