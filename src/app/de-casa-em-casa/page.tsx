@@ -2,14 +2,15 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, PanInfo } from 'framer-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { 
   BarChart2, BotMessageSquare, UserPlus, Route, ListChecks, 
-  KeyRound, ArrowRight, Sparkles, CheckCircle2, ChevronLeft, ChevronRight 
+  KeyRound, ArrowRight, Sparkles, CheckCircle2, ChevronLeft, ChevronRight,
+  ZoomIn, ZoomOut, RotateCw
 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
@@ -77,6 +78,41 @@ const faqs = [
 export default function DeCasaEmCasaPage() {
   const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('de-casa-em-casa-screenshot'));
   const [selectedImageUrl, setSelectedImageUrl] = useState<string | null>(null);
+
+  // State for zoom and pan
+  const [scale, setScale] = useState(1);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleWheel = (event: React.WheelEvent) => {
+    const newScale = scale + event.deltaY * -0.001;
+    // Clamp scale between 1 and 4
+    const clampedScale = Math.min(Math.max(1, newScale), 4);
+    setScale(clampedScale);
+    if (clampedScale === 1) {
+      setPosition({ x: 0, y: 0 });
+    }
+  };
+
+  const handlePan = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    if (scale > 1) {
+      setPosition({
+        x: position.x + info.delta.x,
+        y: position.y + info.delta.y,
+      });
+    }
+  };
+  
+  const resetZoom = () => {
+    setScale(1);
+    setPosition({ x: 0, y: 0 });
+  }
+
+  const onOpenChange = (isOpen: boolean) => {
+    if (!isOpen) {
+      setSelectedImageUrl(null);
+      resetZoom();
+    }
+  }
 
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
@@ -183,7 +219,7 @@ export default function DeCasaEmCasaPage() {
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <Dialog onOpenChange={(isOpen) => !isOpen && setSelectedImageUrl(null)}>
+                    <Dialog onOpenChange={onOpenChange}>
                         <Carousel className="w-full max-w-5xl">
                             <CarouselContent>
                             {screenshots.map((shot, index) => (
@@ -208,7 +244,7 @@ export default function DeCasaEmCasaPage() {
                         </Carousel>
                         
                         <DialogContent 
-                          className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
+                          className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center overflow-hidden"
                         >
                            <div className="sr-only">
                               <DialogTitle>Visualização de Imagem</DialogTitle>
@@ -217,13 +253,38 @@ export default function DeCasaEmCasaPage() {
                               </DialogDescription>
                           </div>
                           {selectedImageUrl && (
-                            <Image 
-                              src={selectedImageUrl}
-                              alt="Screenshot ampliado"
-                              width={400}
-                              height={800}
-                              className="object-contain h-full w-auto rounded-lg"
-                            />
+                            <div className="relative w-full h-full flex items-center justify-center">
+                                <motion.div
+                                    className="relative w-auto h-full cursor-grab active:cursor-grabbing"
+                                    style={{
+                                        scale,
+                                        translateX: position.x,
+                                        translateY: position.y,
+                                    }}
+                                    onWheel={handleWheel}
+                                    onPan={handlePan}
+                                    drag={scale > 1}
+                                    dragConstraints={{ left: -200, right: 200, top: -200, bottom: 200 }}
+                                    dragElastic={0.2}
+                                >
+                                    <Image 
+                                      src={selectedImageUrl}
+                                      alt="Screenshot ampliado"
+                                      width={400}
+                                      height={800}
+                                      className="object-contain h-full w-auto rounded-lg pointer-events-none"
+                                    />
+                                </motion.div>
+                                <Button
+                                  variant="ghost"
+                                  size="icon"
+                                  onClick={resetZoom}
+                                  className="absolute top-4 right-14 bg-white/80 hover:bg-white text-black rounded-full"
+                                >
+                                  <RotateCw className="h-4 w-4"/>
+                                  <span className="sr-only">Resetar Zoom</span>
+                                </Button>
+                            </div>
                           )}
                         </DialogContent>
                     </Dialog>
