@@ -190,7 +190,7 @@ export default function DeCasaEmCasaPage() {
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: idx * 0.1 }}
+                          transition={{ delay: idx * 0.2 }}
                         >
                           <Card className="h-full border-none shadow-md hover:shadow-xl transition-all dark:bg-slate-900/50">
                               <CardHeader>
@@ -264,7 +264,7 @@ export default function DeCasaEmCasaPage() {
                                     onWheel={handleWheel}
                                     onPan={handlePan}
                                     drag={scale > 1}
-                                    dragConstraints={{ left: false, right: false, top: false, bottom: false }}
+                                    dragConstraints={false}
                                     dragElastic={0.2}
                                 >
                                     <Image 
