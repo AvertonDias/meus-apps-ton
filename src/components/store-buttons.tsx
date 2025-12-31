@@ -5,7 +5,6 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { FaApple, FaAndroid, FaWindows } from 'react-icons/fa';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
-import { MonitorSmartphone } from 'lucide-react';
 
 export function PwaButton({ href, className }: { href: string, className?: string }) {
   return (
@@ -21,7 +20,13 @@ export function PwaButton({ href, className }: { href: string, className?: strin
         <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
           <div className="flex -space-x-2 group-hover:space-x-1 transition-all">
              <div className="p-1.5 bg-white/10 rounded-lg backdrop-blur-md border border-white/20">
-                <MonitorSmartphone className="h-5 w-5" />
+                <FaApple className="h-5 w-5" />
+             </div>
+             <div className="p-1.5 bg-white/10 rounded-lg backdrop-blur-md border border-white/20">
+                <FaAndroid className="h-5 w-5" />
+             </div>
+             <div className="p-1.5 bg-white/10 rounded-lg backdrop-blur-md border border-white/20">
+                <FaWindows className="h-5 w-5" />
              </div>
           </div>
           <div className="flex flex-col items-start leading-tight">
