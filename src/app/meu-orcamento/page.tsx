@@ -28,7 +28,7 @@ const features = [
   },
   { 
     icon: Users, 
-    title: 'Gestão de Clientes', 
+    title: 'Gestão de Clientes', _
     description: 'Mantenha um histórico completo de orçamentos vinculado a cada cliente.',
     color: 'bg-indigo-500/10 text-indigo-500'
   },
@@ -121,8 +121,8 @@ export default function MeuOrcamentoPage() {
                       <Smartphone className="w-48 h-48 text-blue-400 opacity-90" strokeWidth={1} />
                       
                       {/* Ícone flutuante de lucro/tools */}
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-600 p-4 rounded-2xl shadow-xl">
-                         <Calculator className="w-12 h-12 text-white" />
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                         <Image src="/MeuOrcamento/MeuOrcamentoLogo.jpg" alt="Meu Orçamento Logo" width={100} height={100} className="rounded-2xl shadow-xl" />
                       </div>
                     </motion.div>
                   </div>
