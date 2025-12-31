@@ -9,8 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { 
   BarChart2, BotMessageSquare, UserPlus, Route, ListChecks, 
-  KeyRound, ArrowRight, Sparkles, CheckCircle2, ChevronLeft, ChevronRight,
-  ZoomIn, ZoomOut, RotateCw
+  KeyRound, Sparkles, CheckCircle2
 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
@@ -190,7 +189,7 @@ export default function DeCasaEmCasaPage() {
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: idx * 0.4 }}
+                          transition={{ delay: idx === 0 ? 0.8 : idx * 0.4 }}
                         >
                           <Card className="h-full border-none shadow-md hover:shadow-xl transition-all dark:bg-slate-900/50">
                               <CardHeader>
