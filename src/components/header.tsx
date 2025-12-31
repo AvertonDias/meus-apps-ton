@@ -2,15 +2,20 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Smartphone, Menu, X, ArrowRight } from 'lucide-react';
+import { Smartphone, Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Efeito para mudar o estilo do header ao scrollar
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -19,10 +24,15 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const mainNavLinks = [
     { name: 'Início', href: '/' },
-    { name: 'Aplicativos', href: '#apps' },
     { name: 'Sobre', href: '/sobre' },
+  ];
+
+  const appLinks = [
+    { name: 'De Casa em Casa', href: '/de-casa-em-casa' },
+    { name: 'Meu Orçamento', href: '/meu-orcamento' },
+    { name: 'Lista Fácil', href: '/lista-facil' },
   ];
 
   return (
@@ -53,7 +63,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {mainNavLinks.map((link) => (
             <Link 
               key={link.name} 
               href={link.href}
@@ -62,6 +72,20 @@ export function Header() {
               {link.name}
             </Link>
           ))}
+          
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-blue-600 transition-colors focus:outline-none">
+              Aplicativos <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              {appLinks.map((link) => (
+                <DropdownMenuItem key={link.name} asChild>
+                  <Link href={link.href}>{link.name}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6">
             Começar Agora <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -80,7 +104,7 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-background border-b animate-in slide-in-from-top duration-300">
           <nav className="flex flex-col p-6 gap-4">
-            {navLinks.map((link) => (
+            {mainNavLinks.map((link) => (
               <Link 
                 key={link.name} 
                 href={link.href}
@@ -90,6 +114,22 @@ export function Header() {
                 {link.name}
               </Link>
             ))}
+            <div className="text-lg font-medium py-2 border-b border-border/50 text-muted-foreground">
+              Aplicativos
+            </div>
+            <div className="flex flex-col pl-4">
+              {appLinks.map((link) => (
+                <Link 
+                  key={link.name} 
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-base font-medium py-2 text-muted-foreground/80"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+
             <Button className="w-full bg-blue-600 mt-4">
               Começar Agora
             </Button>
