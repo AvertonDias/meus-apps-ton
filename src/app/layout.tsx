@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/Site img/Icon.jpeg',
+    apple: '/Site img/Icon.jpeg',
   },
 };
 
