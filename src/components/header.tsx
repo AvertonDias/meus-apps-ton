@@ -86,9 +86,6 @@ export function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6">
-            Começar Agora <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
         </nav>
 
         {/* Mobile Toggle */}
@@ -130,9 +127,6 @@ export function Header() {
               ))}
             </div>
 
-            <Button className="w-full bg-blue-600 mt-4">
-              Começar Agora
-            </Button>
           </nav>
         </div>
       )}
