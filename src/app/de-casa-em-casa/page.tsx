@@ -196,7 +196,7 @@ export default function DeCasaEmCasaPage() {
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <Dialog>
+                    <Dialog onOpenChange={(isOpen) => !isOpen && setSelectedImageIndex(null)}>
                         <Carousel className="w-full max-w-5xl">
                             <CarouselContent>
                             {screenshots.map((shot, index) => (
@@ -222,7 +222,6 @@ export default function DeCasaEmCasaPage() {
                         
                         <DialogContent 
                           className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
-                          onInteractOutside={() => setSelectedImageIndex(null)}
                         >
                            <div className="sr-only">
                               <DialogTitle>Visualização de Imagem</DialogTitle>
