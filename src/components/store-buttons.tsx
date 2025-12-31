@@ -1,57 +1,85 @@
+'use client'
 
+import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { FaApple, FaAndroid, FaWindows } from 'react-icons/fa';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
-
+import { MonitorSmartphone } from 'lucide-react';
 
 export function PwaButton({ href, className }: { href: string, className?: string }) {
   return (
-    <Button variant="outline" asChild className={cn("bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground", className)}>
-      <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
-        <div className="flex gap-2">
-          <FaApple className="h-5 w-5" />
-          <FaAndroid className="h-5 w-5" />
-          <FaWindows className="h-5 w-5" />
-        </div>
-        <div>
-          <p className="text-sm font-semibold">Acessar o App</p>
-          <p className="text-xs font-normal text-left">(Multiplataforma)</p>
-        </div>
-      </a>
-    </Button>
+    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+      <Button 
+        variant="default" 
+        asChild 
+        className={cn(
+          "h-16 px-6 bg-blue-600 hover:bg-blue-500 text-white border-none rounded-2xl shadow-lg shadow-blue-600/20 transition-all", 
+          className
+        )}
+      >
+        <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
+          <div className="flex -space-x-2 group-hover:space-x-1 transition-all">
+             <div className="p-1.5 bg-white/10 rounded-lg backdrop-blur-md border border-white/20">
+                <MonitorSmartphone className="h-5 w-5" />
+             </div>
+          </div>
+          <div className="flex flex-col items-start leading-tight">
+            <span className="text-[10px] uppercase tracking-widest opacity-80 font-bold">Acesso Direto</span>
+            <span className="text-base font-bold">Abrir Web App</span>
+          </div>
+        </a>
+      </Button>
+    </motion.div>
   );
 }
 
 export function PlayStoreButton({ href, className }: { href: string, className?: string }) {
-  const isComingSoon = href === "#";
+  const isComingSoon = href === "#" || !href;
 
   return (
-    <div className="relative">
-      <Button
-        variant="outline"
-        asChild={!isComingSoon}
-        disabled={isComingSoon}
-        className={cn(
-          "bg-black text-white",
-          isComingSoon 
-            ? "filter grayscale opacity-50 cursor-not-allowed" 
-            : "hover:bg-black/80 hover:text-white",
-          className
-        )}
+    <div className="relative group">
+      <motion.div 
+        whileHover={!isComingSoon ? { scale: 1.02 } : {}} 
+        whileTap={!isComingSoon ? { scale: 0.98 } : {}}
       >
-        <a href={isComingSoon ? undefined : href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-          <IoLogoGooglePlaystore className="h-6 w-6" />
-          <div>
-            <p className="text-xs text-left">Disponível no</p>
-            <p className="text-sm font-semibold text-left">Google Play</p>
-          </div>
-        </a>
-      </Button>
+        <Button
+          variant="outline"
+          asChild={!isComingSoon}
+          disabled={isComingSoon}
+          className={cn(
+            "h-16 px-6 rounded-2xl border-2 transition-all flex items-center gap-3",
+            isComingSoon 
+              ? "bg-slate-100 dark:bg-slate-900 border-slate-200 dark:border-slate-800 opacity-60 cursor-not-allowed" 
+              : "bg-black text-white border-black hover:bg-zinc-800 hover:border-zinc-800 shadow-xl",
+            className
+          )}
+        >
+          {isComingSoon ? (
+            <div className="flex items-center gap-3">
+              <IoLogoGooglePlaystore className="h-7 w-7 text-slate-400" />
+              <div className="flex flex-col items-start leading-tight text-slate-400">
+                <span className="text-[10px] uppercase font-bold tracking-wider">Disponível em breve</span>
+                <span className="text-base font-bold">Google Play</span>
+              </div>
+            </div>
+          ) : (
+            <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+              <IoLogoGooglePlaystore className="h-7 w-7" />
+              <div className="flex flex-col items-start leading-tight">
+                <span className="text-[10px] uppercase font-bold tracking-wider opacity-80">Download no</span>
+                <span className="text-base font-bold">Google Play</span>
+              </div>
+            </a>
+          )}
+        </Button>
+      </motion.div>
+
+      {/* Badge de "Em Breve" Refinado */}
       {isComingSoon && (
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <span className="transform -rotate-[15deg] bg-red-600/30 text-white font-bold py-1 px-4 rounded-md border-2 border-white/80 text-lg">
-            Em Breve
+        <div className="absolute -top-3 -right-2 z-10">
+          <span className="flex h-6 items-center rounded-full bg-blue-600 px-3 text-[10px] font-black uppercase tracking-tighter text-white shadow-lg ring-2 ring-white dark:ring-slate-950">
+            Coming Soon
           </span>
         </div>
       )}

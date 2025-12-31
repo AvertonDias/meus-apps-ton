@@ -1,193 +1,253 @@
+'use client'
 
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Users, Map, Shield, CheckCircle, BarChart2, Settings, UserCheck, Smartphone, Edit, FileText, BotMessageSquare, UserPlus, BookUser, KeyRound, Construction, Route, ListChecks } from 'lucide-react';
+import { 
+  BarChart2, BotMessageSquare, UserPlus, Route, ListChecks, 
+  KeyRound, ArrowRight, Sparkles, CheckCircle2 
+} from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
 
 const features = [
   {
     icon: UserPlus,
-    title: 'Gestão de Acessos Simplificada',
-    description: 'Novos usuários solicitam acesso, e os administradores aprovam com um clique, definindo perfis para manter tudo organizado.',
+    title: 'Gestão de Acessos',
+    description: 'Aprovação de novos usuários com um clique e definição de perfis para manter a segurança.',
+    color: 'bg-purple-500/10 text-purple-500'
   },
   {
     icon: Route,
-    title: 'Territórios Urbanos e Rurais',
-    description: 'Organize territórios urbanos com quadras e casas, ou use um diário de bordo para registrar o trabalho em territórios rurais.',
+    title: 'Territórios Flexíveis',
+    description: 'Organize quadras urbanas ou use diários de bordo para áreas rurais com facilidade.',
+    color: 'bg-indigo-500/10 text-indigo-500'
   },
   {
     icon: ListChecks,
-    title: 'Trabalho de Campo em Tempo Real',
-    description: 'Marque casas como trabalhadas e veja o progresso ser atualizado instantaneamente para toda a congregação.',
+    title: 'Progresso em Tempo Real',
+    description: 'Sincronização instantânea: quando uma casa é marcada, todos veem a atualização.',
+    color: 'bg-blue-500/10 text-blue-500'
   },
   {
     icon: BotMessageSquare,
-    title: 'Módulo de Administração Inteligente',
-    description: 'Designe territórios, defina datas, envie lembretes e gere o relatório S-13 automaticamente com base nos dados do sistema.',
+    title: 'Relatórios S-13',
+    description: 'Geração automática de relatórios de congregação baseados na atividade real do campo.',
+    color: 'bg-violet-500/10 text-violet-500'
   },
   {
     icon: BarChart2,
-    title: 'Estatísticas e Visão Geral',
-    description: 'Acesse gráficos sobre a cobertura dos territórios, tempo médio de trabalho e histórico para um planejamento eficiente.',
+    title: 'Estatísticas Avançadas',
+    description: 'Visão clara da cobertura de territórios e tempo médio de trabalho para planejamento.',
+    color: 'bg-fuchsia-500/10 text-fuchsia-500'
   },
   {
     icon: KeyRound,
-    title: 'Perfis de Usuário Flexíveis',
-    description: 'Cinco perfis de acesso (Administrador, Dirigente, Servo, Ajudante, Publicador) garantem que cada um veja apenas o necessário.',
+    title: 'Perfis de Acesso',
+    description: '5 níveis de permissão garantem que cada usuário acesse apenas o que sua função exige.',
+    color: 'bg-cyan-500/10 text-cyan-500'
   },
 ];
 
 const faqs = [
     {
         question: "Como um publicador solicita o acesso?",
-        answer: "Na tela de login, clique em 'Solicite seu acesso aqui', preencha seus dados, crie uma senha e insira o número da sua congregação. Um administrador precisará aprovar sua solicitação para você ter acesso completo."
+        answer: "Na tela de login, clique em 'Solicite seu acesso aqui', preencha seus dados e o número da sua congregação. Um administrador aprovará sua entrada."
     },
     {
         question: "O aplicativo funciona offline?",
-        answer: "Sim! Você pode instalar o 'De Casa em Casa' no seu celular ou computador. Ele funciona mesmo sem conexão com a internet, sincronizando os dados assim que você se reconectar."
-    },
-    {
-        question: "Posso mudar a ordem das casas em uma quadra?",
-        answer: "Sim! Use o botão 'Reordenar' para arrastar e soltar os números na sequência exata do seu percurso, otimizando seu trabalho de campo."
+        answer: "Sim! O app é um PWA (Progressive Web App). Você pode instalar e usar offline; os dados sincronizam assim que houver conexão."
     },
     {
         question: "É seguro usar este aplicativo?",
-        answer: "Sim, a segurança é uma prioridade. O acesso é controlado por aprovação de administradores, e os perfis de usuário garantem que cada pessoa veja apenas as informações pertinentes à sua função na congregação."
+        answer: "Sim, a segurança é prioridade. O acesso é restrito e controlado por administradores locais, protegendo as informações da congregação."
     },
     {
-      question: "Como funciona o fechamento de um território?",
-      answer: "O administrador define uma data de fechamento para o território. Com base em todas as casas trabalhadas até essa data, o sistema compila e gera automaticamente os relatórios, incluindo o S-13, pronto para ser utilizado."
-    },
-    {
-      question: "Qual a diferença do trabalho em territórios rurais?",
-      answer: "Para territórios rurais, em vez de cadastrar cada casa, você usa um 'Diário de Bordo'. Nele, você pode adicionar notas sobre o trabalho do dia, como as ruas visitadas ou contatos importantes, oferecendo flexibilidade para áreas menos densas."
-    },
-    {
-      question: "Todos na congregação podem ver o progresso do território?",
-      answer: "Sim, todos os usuários com acesso ao território designado podem ver o mapa e o progresso em tempo real, incluindo quais casas já foram trabalhadas. Isso promove a colaboração e evita que a mesma casa seja visitada duas vezes."
+        question: "Como funciona a geração de relatórios?",
+        answer: "O sistema compila os dados de fechamento de território e gera o arquivo S-13 pronto para conferência, economizando horas de trabalho manual."
     }
-]
+];
 
 export default function DeCasaEmCasaPage() {
   const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('de-casa-em-casa-screenshot'));
 
   return (
-    <div className="flex min-h-screen flex-col bg-background">
+    <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
       <main className="flex-1">
-        <section className="relative h-[50vh] min-h-[400px] sm:min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
-          <div className="container h-full flex flex-col justify-center items-center text-center">
-            <div className="md:hidden mb-4">
-                <Image
-                    src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
-                    alt="Logotipo De Casa em Casa"
-                    width={100}
-                    height={100}
-                />
-            </div>
-            <div className="hidden md:block absolute left-8 top-1/2 -translate-y-1/2">
-                 <Image
-                    src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
-                    alt="Logotipo De Casa em Casa"
-                    width={150}
-                    height={150}
-                />
-            </div>
-            <div className="flex flex-col items-center">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white">
-                De Casa em Casa
-              </h1>
-              <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/80">
-                A ferramenta digital para revolucionar a organização dos seus territórios.
-              </p>
-              <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row justify-center">
-                <PwaButton href="https://de-casa-em-casa.vercel.app/" />
-                <PlayStoreButton href="#" />
-              </div>
+        
+        {/* HERO SECTION MODERNIZADA */}
+        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#0f0720] py-20">
+          {/* Efeitos de Luz de Fundo */}
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px]" />
+          
+          <div className="container relative z-10 px-4">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              
+              <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="flex-1 text-center lg:text-left"
+              >
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-6">
+                  <Sparkles className="w-4 h-4" />
+                  Territórios Inteligentes
+                </div>
+                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
+                  De Casa <br />
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-300">
+                    em Casa
+                  </span>
+                </h1>
+                <p className="text-lg md:text-xl text-slate-300 max-w-xl mb-10 leading-relaxed">
+                  A ferramenta definitiva para organizar territórios, acompanhar o progresso em tempo real e otimizar o trabalho de campo da sua congregação.
+                </p>
+                <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                  <PwaButton href="https://de-casa-em-casa.vercel.app/" className="shadow-purple-600/20" />
+                  <PlayStoreButton href="#" />
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="flex-1 relative"
+              >
+                <div className="relative z-10 p-4 bg-white/5 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-2xl">
+                   <Image
+                      src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
+                      alt="Logotipo De Casa em Casa"
+                      width={400}
+                      height={400}
+                      className="drop-shadow-[0_0_50px_rgba(168,85,247,0.4)] animate-float"
+                  />
+                </div>
+                {/* Elementos flutuantes decorativos */}
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-500/20 rounded-full blur-xl animate-bounce" />
+              </motion.div>
             </div>
           </div>
         </section>
 
-        <section id="features" className="w-full py-16 sm:py-24">
-            <div className="container">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Uma Ferramenta Completa</h2>
+        {/* FEATURES COM CARDS REFINADOS */}
+        <section id="features" className="w-full py-24 bg-slate-50 dark:bg-[#020617]">
+            <div className="container px-4">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Uma Ferramenta Completa</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Organização, eficiência e colaboração em um só lugar. Do primeiro acesso à geração de relatórios.
+                        Desenvolvido para atender às necessidades reais do trabalho de campo, do administrador ao publicador.
                     </p>
                 </div>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-                    {features.map((feature) => (
-                        <Card key={feature.title} className="flex flex-col">
-                            <CardHeader className="flex flex-row items-center gap-4">
-                                <feature.icon className="h-8 w-8 text-primary" />
-                                <CardTitle>{feature.title}</CardTitle>
-                            </CardHeader>
-                            <CardContent className="flex-1">
-                                <p className="text-muted-foreground">{feature.description}</p>
-                            </CardContent>
-                        </Card>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+                    {features.map((feature, idx) => (
+                        <motion.div
+                          key={feature.title}
+                          whileHover={{ y: -5 }}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: idx * 0.1 }}
+                        >
+                          <Card className="h-full border-none shadow-md hover:shadow-xl transition-all dark:bg-slate-900/50">
+                              <CardHeader>
+                                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-2 ${feature.color}`}>
+                                    <feature.icon className="h-6 w-6" />
+                                  </div>
+                                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                              </CardHeader>
+                              <CardContent>
+                                  <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                              </CardContent>
+                          </Card>
+                        </motion.div>
                     ))}
                 </div>
             </div>
         </section>
         
-        <section id="gallery" className="w-full py-16 sm:py-24 bg-secondary">
-             <div className="container">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Veja o App em Ação</h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Navegue pela interface limpa e intuitiva do "De Casa em Casa".
+        {/* GALERIA COM MOCKUPS */}
+        <section id="gallery" className="w-full py-24 border-y border-slate-100 dark:border-slate-800">
+             <div className="container px-4">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight italic">O App em Suas Mãos</h2>
+                    <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground text-center">
+                        Interface limpa, rápida e intuitiva. Veja como o De Casa em Casa se adapta ao seu dispositivo.
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <Carousel className="w-full max-w-4xl">
+                    <Carousel className="w-full max-w-5xl">
                         <CarouselContent>
                         {screenshots.map((shot) => (
-                            <CarouselItem key={shot.id} className="md:basis-1/2">
-                            <Card>
-                                <CardContent className="p-0">
+                            <CarouselItem key={shot.id} className="md:basis-1/2 lg:basis-1/3 p-4">
+                              <div className="relative group overflow-hidden rounded-[2rem] border-8 border-slate-900 shadow-2xl">
                                 <Image
                                     src={shot.imageUrl}
-                                    alt={`Captura de tela de De Casa em Casa`}
-                                    width={800}
-                                    height={600}
-                                    className="rounded-lg object-cover aspect-video"
-                                    data-ai-hint={shot.imageHint}
+                                    alt={`Captura de tela`}
+                                    width={400}
+                                    height={800}
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                </CardContent>
-                            </Card>
+                                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                              </div>
                             </CarouselItem>
                         ))}
                         </CarouselContent>
-                        <CarouselPrevious className="-left-4" />
-                        <CarouselNext className="-right-4" />
+                        <CarouselPrevious className="hidden md:flex -left-12" />
+                        <CarouselNext className="hidden md:flex -right-12" />
                     </Carousel>
                 </div>
             </div>
         </section>
         
-        <section id="faq" className="w-full py-16 sm:py-24">
-            <div className="container">
-                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Perguntas Frequentes</h2>
+        {/* FAQ REFINADO */}
+        <section id="faq" className="w-full py-24 bg-slate-50 dark:bg-slate-950/50">
+            <div className="container px-4">
+                 <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Perguntas Frequentes</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Tudo o que você precisa saber para começar.
+                        Dúvidas comuns sobre o uso da plataforma.
                     </p>
                 </div>
-                <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto text-left">
-                    {faqs.map((faq, index) =>(
-                        <AccordionItem value={`item-${index+1}`} key={index}>
-                            <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
-                            <AccordionContent className="text-base text-muted-foreground text-left">
-                            {faq.answer}
-                            </AccordionContent>
-                        </AccordionItem>
-                    ))}
-                </Accordion>
+                <div className="max-w-3xl mx-auto">
+                  <Accordion type="single" collapsible className="space-y-4">
+                      {faqs.map((faq, index) =>(
+                          <AccordionItem value={`item-${index+1}`} key={index} className="border rounded-xl px-6 bg-white dark:bg-slate-900 shadow-sm">
+                              <AccordionTrigger className="text-base md:text-lg font-semibold hover:no-underline">
+                                {faq.question}
+                              </AccordionTrigger>
+                              <AccordionContent className="text-slate-600 dark:text-slate-400 leading-relaxed pb-4">
+                                {faq.answer}
+                              </AccordionContent>
+                          </AccordionItem>
+                      ))}
+                  </Accordion>
+                </div>
             </div>
+        </section>
+
+        {/* NOVA SEÇÃO: CTA FINAL */}
+        <section className="py-24 bg-purple-600">
+          <div className="container px-4 text-center">
+             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
+               Pronto para organizar sua congregação?
+             </h2>
+             <p className="text-purple-100 text-lg max-w-2xl mx-auto mb-12">
+               Junte-se a centenas de usuários que já otimizaram o trabalho de campo com eficiência e tecnologia.
+             </p>
+             <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-7 rounded-2xl shadow-xl">
+                  Criar Conta Grátis
+                </Button>
+                <div className="flex items-center justify-center gap-4 text-white/80">
+                  <div className="flex items-center gap-1"><CheckCircle2 className="w-5 h-5" /> Sem custos</div>
+                  <div className="flex items-center gap-1"><CheckCircle2 className="w-5 h-5" /> Online/Offline</div>
+                </div>
+             </div>
+          </div>
         </section>
 
       </main>
