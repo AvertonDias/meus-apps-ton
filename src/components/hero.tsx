@@ -14,15 +14,6 @@ export function Hero() {
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           
-          {/* Badge Pequena */}
-          <motion.span 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-sm font-medium mb-6"
-          >
-            Ton Apps • Produtividade
-          </motion.span>
-
           {/* Título Principal */}
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
