@@ -137,7 +137,7 @@ export default function ListaFacilPage() {
                         </div>
                         <div className="grid gap-6">
                             {adminFeatures.map((f, i) => (
-                                <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
+                                <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.2 }}>
                                     <Card className="border-none shadow-sm hover:shadow-md transition-all dark:bg-slate-900/50">
                                         <CardHeader className="flex flex-row items-center gap-4 py-4">
                                             <div className={`p-3 rounded-lg ${f.color}`}><f.icon className="w-5 h-5" /></div>
@@ -160,7 +160,7 @@ export default function ListaFacilPage() {
                         </div>
                         <div className="grid gap-6">
                             {collaboratorFeatures.map((f, i) => (
-                                <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: (i + 3) * 0.1 }}>
+                                <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: (i + adminFeatures.length) * 0.2 }}>
                                     <Card className="border-none shadow-sm hover:shadow-md transition-all dark:bg-slate-900/50">
                                         <CardHeader className="flex flex-row items-center gap-4 py-4">
                                             <div className={`p-3 rounded-lg ${f.color}`}><f.icon className="w-5 h-5" /></div>

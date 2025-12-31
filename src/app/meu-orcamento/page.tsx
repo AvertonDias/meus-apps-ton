@@ -150,7 +150,7 @@ export default function MeuOrcamentoPage() {
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: idx * 0.1 }}
+                          transition={{ delay: idx * 0.2 }}
                         >
                           <Card className="h-full border-none shadow-md hover:shadow-xl transition-all dark:bg-slate-900/40">
                               <CardHeader>

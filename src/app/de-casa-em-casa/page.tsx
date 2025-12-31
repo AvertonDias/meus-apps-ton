@@ -189,7 +189,7 @@ export default function DeCasaEmCasaPage() {
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: idx === 0 ? 0.8 : idx * 0.4 }}
+                          transition={{ delay: idx * 0.2 }}
                         >
                           <Card className="h-full border-none shadow-md hover:shadow-xl transition-all dark:bg-slate-900/50">
                               <CardHeader>

@@ -70,7 +70,7 @@ export function AppBanners() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.2 }}
               >
                 <Link href={app.href} className="group block">
                   <Card className="overflow-hidden border-none shadow-sm group-hover:shadow-xl transition-all duration-500 bg-white dark:bg-slate-900/50 backdrop-blur-sm">
