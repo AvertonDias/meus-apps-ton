@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { 
   BarChart2, BotMessageSquare, UserPlus, Route, ListChecks, 
-  KeyRound, ArrowRight, Sparkles, CheckCircle2 
+  KeyRound, ArrowRight, Sparkles, CheckCircle2, ChevronLeft, ChevronRight 
 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
@@ -75,7 +75,20 @@ const faqs = [
 
 export default function DeCasaEmCasaPage() {
   const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('de-casa-em-casa-screenshot'));
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  const handleNext = () => {
+    if (selectedImageIndex === null) return;
+    setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex + 1) % screenshots.length));
+  };
+
+  const handlePrevious = () => {
+    if (selectedImageIndex === null) return;
+    setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex - 1 + screenshots.length) % screenshots.length));
+  };
+
+  const selectedImageUrl = selectedImageIndex !== null ? screenshots[selectedImageIndex].imageUrl : null;
+
 
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
@@ -185,9 +198,9 @@ export default function DeCasaEmCasaPage() {
                     <Dialog>
                         <Carousel className="w-full max-w-5xl">
                             <CarouselContent>
-                            {screenshots.map((shot) => (
+                            {screenshots.map((shot, index) => (
                                 <CarouselItem key={shot.id} className="md:basis-1/2 lg:basis-1/3 p-4">
-                                    <DialogTrigger asChild onClick={() => setSelectedImage(shot.imageUrl)}>
+                                    <DialogTrigger asChild onClick={() => setSelectedImageIndex(index)}>
                                         <div className="relative group overflow-hidden rounded-[2rem] border-8 border-slate-900 shadow-2xl cursor-pointer">
                                             <Image
                                                 src={shot.imageUrl}
@@ -205,21 +218,44 @@ export default function DeCasaEmCasaPage() {
                             <CarouselPrevious className="hidden md:flex -left-12" />
                             <CarouselNext className="hidden md:flex -right-12" />
                         </Carousel>
-                        {selectedImage && (
-                          <DialogContent className="max-w-none w-[90vw] md:w-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center">
+                        {selectedImageUrl && (
+                          <DialogContent 
+                            className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
+                            onInteractOutside={() => setSelectedImageIndex(null)}
+                          >
                              <div className="sr-only">
                                 <DialogTitle>Visualização de Imagem</DialogTitle>
                                 <DialogDescription>
                                     Imagem da captura de tela do aplicativo ampliada para melhor visualização.
                                 </DialogDescription>
                             </div>
-                            <Image 
-                              src={selectedImage}
-                              alt="Screenshot ampliado"
-                              width={800}
-                              height={1600}
-                              className="h-auto w-full md:h-full md:w-auto object-contain rounded-lg"
-                            />
+                            <div className="relative w-full h-full">
+                                <Image 
+                                  src={selectedImageUrl}
+                                  alt="Screenshot ampliado"
+                                  layout="fill"
+                                  objectFit="contain"
+                                  className="rounded-lg"
+                                />
+                                <Button
+                                    variant="ghost"
+                                    size="icon"
+                                    onClick={(e) => { e.stopPropagation(); handlePrevious(); }}
+                                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full text-black"
+                                >
+                                    <ChevronLeft className="h-6 w-6" />
+                                    <span className="sr-only">Anterior</span>
+                                </Button>
+                                <Button
+                                    variant="ghost"
+                                    size="icon"
+                                    onClick={(e) => { e.stopPropagation(); handleNext(); }}
+                                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full text-black"
+                                >
+                                    <ChevronRight className="h-6 w-6" />
+                                    <span className="sr-only">Próxima</span>
+                                </Button>
+                            </div>
                           </DialogContent>
                         )}
                     </Dialog>
