@@ -35,7 +35,7 @@ const apps = [
     description: 'Crie e compartilhe listas de compras de forma inteligente. Nunca mais esqueça um item essencial no mercado.',
     imageUrlId: 'banner-lista-facil',
     href: '/lista-facil',
-    color: 'bg-gradient-to-br from-orange-500/20 to-yellow-500/20'
+    color: 'bg-[#B2E6F9]'
   },
 ];
 
