@@ -1,8 +1,6 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -126,7 +124,6 @@ export default function ListaFacilPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <Header />
       <main className="flex-1">
         <section className="relative h-[60vh] min-h-[400px] w-full">
           {heroImage && (
@@ -299,7 +296,6 @@ export default function ListaFacilPage() {
         </section>
         
       </main>
-      <Footer />
     </div>
   );
 }

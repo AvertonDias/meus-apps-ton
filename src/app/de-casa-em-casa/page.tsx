@@ -1,8 +1,6 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -78,7 +76,6 @@ export default function DeCasaEmCasaPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <Header />
       <main className="flex-1">
         <section className="relative h-[50vh] min-h-[400px] sm:min-h-[300px] w-full bg-gradient-to-t from-purple-900/80 via-purple-800/50 to-purple-900/80">
           <div className="container h-full flex flex-col justify-center items-center text-center">
@@ -194,7 +191,6 @@ export default function DeCasaEmCasaPage() {
         </section>
 
       </main>
-      <Footer />
     </div>
   );
 }

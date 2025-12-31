@@ -1,8 +1,6 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -84,7 +82,6 @@ export default function MeuOrcamentoPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
       <main className="flex-1">
         <section className="relative h-[50vh] min-h-[300px] w-full bg-gradient-to-t from-blue-900/80 via-blue-800/50 to-blue-900/80">
             <div className="container h-full flex flex-col justify-center items-center text-center">
@@ -200,7 +197,6 @@ export default function MeuOrcamentoPage() {
         </section>
 
       </main>
-      <Footer />
     </div>
   );
 }
