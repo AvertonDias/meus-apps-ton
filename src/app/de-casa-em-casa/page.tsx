@@ -122,7 +122,7 @@ export default function DeCasaEmCasaPage() {
               >
                 <div className="relative z-10 p-4 bg-white/5 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-2xl">
                    <Image
-                      src="/DeCasaEmCasa/Imagens/01.png"
+                      src="/DeCasaEmCasa/DeCasaEmCasaLLogo.png"
                       alt="Logotipo De Casa em Casa"
                       width={400}
                       height={400}
@@ -278,3 +278,5 @@ export default function DeCasaEmCasaPage() {
     </div>
   );
 }
+
+    
