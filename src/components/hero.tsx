@@ -58,9 +58,6 @@ export function Hero() {
               Conheça os Apps
               <ChevronDown className="w-5 h-5" />
             </Link>
-            <button className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-semibold transition-all active:scale-95">
-              Ver Demonstração
-            </button>
           </motion.div>
         </div>
 
