@@ -87,9 +87,8 @@ export default function DeCasaEmCasaPage() {
     if (selectedImageIndex === null) return;
     setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex - 1 + screenshots.length) % screenshots.length));
   };
-
+  
   const selectedImageUrl = selectedImageIndex !== null ? screenshots[selectedImageIndex]?.imageUrl : null;
-
 
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
@@ -221,7 +220,7 @@ export default function DeCasaEmCasaPage() {
                         </Carousel>
                         
                         <DialogContent 
-                          className="max-w-none w-[90vw] md:w-auto h-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
+                          className="max-w-none w-[90vw] md:w-auto h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center"
                         >
                            <div className="sr-only">
                               <DialogTitle>Visualização de Imagem</DialogTitle>
