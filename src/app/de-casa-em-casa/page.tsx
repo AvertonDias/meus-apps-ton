@@ -206,7 +206,7 @@ export default function DeCasaEmCasaPage() {
                             <CarouselNext className="hidden md:flex -right-12" />
                         </Carousel>
                         {selectedImage && (
-                          <DialogContent className="max-w-none w-auto h-[90vh] p-4 border-none bg-transparent flex items-center justify-center">
+                          <DialogContent className="max-w-none w-[90vw] md:w-auto md:h-[90vh] p-2 md:p-4 border-none bg-transparent flex items-center justify-center">
                              <div className="sr-only">
                                 <DialogTitle>Visualização de Imagem</DialogTitle>
                                 <DialogDescription>
@@ -218,7 +218,7 @@ export default function DeCasaEmCasaPage() {
                               alt="Screenshot ampliado"
                               width={800}
                               height={1600}
-                              className="h-full w-auto object-contain rounded-lg"
+                              className="h-auto w-full md:h-full md:w-auto object-contain rounded-lg"
                             />
                           </DialogContent>
                         )}
