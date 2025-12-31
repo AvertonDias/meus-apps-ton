@@ -13,6 +13,7 @@ import {
   MessageSquare, LogIn, Sparkles, Send, UserCheck, Share, 
   CheckCircle2, ShoppingBag 
 } from 'lucide-react';
+import Link from 'next/link';
 
 const adminFeatures = [
   { icon: LayoutDashboard, title: 'Dashboard', description: 'Gerencie itens padrão e listas em tempo real.', color: 'bg-emerald-500/10 text-emerald-600' },
@@ -207,9 +208,11 @@ export default function ListaFacilPage() {
                <p className="text-slate-400 text-lg mb-12 max-w-xl mx-auto italic">
                  "A geladeira está cheia, a despensa organizada e o mercado ficou muito mais rápido."
                </p>
-               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-500 text-white px-10 py-7 rounded-2xl text-lg font-bold">
-                 Criar minha Lista Grátis
-               </Button>
+                <Button size="lg" asChild className="bg-emerald-600 hover:bg-emerald-500 text-white px-10 py-7 rounded-2xl text-lg font-bold">
+                  <a href="https://lista-de-limpeza-facil.vercel.app/signup" target="_blank" rel="noopener noreferrer">
+                    Criar minha Lista Grátis
+                  </a>
+                </Button>
              </motion.div>
           </div>
         </section>
