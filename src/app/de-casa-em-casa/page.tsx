@@ -38,7 +38,7 @@ const features = [
   {
     icon: BotMessageSquare,
     title: 'Relatórios S-13',
-    description: 'Geração automática de relatórios de congregação baseados na atividade real do campo.',
+    description: 'Gere relatórios baseados na atividade real do campo.',
     color: 'bg-violet-500/10 text-violet-500'
   },
   {
