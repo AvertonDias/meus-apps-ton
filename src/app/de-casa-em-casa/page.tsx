@@ -178,7 +178,7 @@ export default function DeCasaEmCasaPage() {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Uma Ferramenta Completa</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Desenvolvido para atender às necessidades reais do trabalho de campo, do administrador ao publicador.
+                        Desenvolvido para atender às necessidades reais do trabalho de campo, do dirigente ao publicador.
                     </p>
                 </div>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
