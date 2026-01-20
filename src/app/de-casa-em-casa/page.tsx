@@ -58,7 +58,7 @@ const features = [
 const faqs = [
     {
         question: "Como um publicador solicita o acesso?",
-        answer: "Na tela de login, clique em 'Solicite seu acesso aqui', preencha seus dados e o número da sua congregação. Um administrador aprovará sua entrada."
+        answer: "Na tela de login, clique em 'Solicite seu acesso aqui', preencha seus dados e o número da sua congregação. Um dirigente de campo aprovará sua entrada."
     },
     {
         question: "O aplicativo funciona offline?",
