@@ -62,7 +62,7 @@ const faqs = [
     },
     {
         question: "O aplicativo funciona offline?",
-        answer: "Sim! O app é um PWA (Progressive Web App). Você pode instalar e usar offline; os dados sincronizam assim que houver conexão."
+        answer: "Sim, com certeza! O aplicativo foi feito para funcionar mesmo quando você está sem internet. Pode fazer suas anotações normalmente e, assim que o celular encontrar um sinal, tudo será atualizado para a equipe automaticamente."
     },
     {
         question: "É seguro usar este aplicativo?",
