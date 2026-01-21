@@ -1,0 +1,16 @@
+{
+  "name": "Ton Apps",
+  "short_name": "Ton Apps",
+  "description": "Soluções Inteligentes para Organizar seu Dia a Dia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#051937",
+  "theme_color": "#051937",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
