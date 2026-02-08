@@ -168,7 +168,7 @@ export default function AgendaDeOradoresPage() {
              </p>
              <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <Button size="lg" asChild className="bg-white text-green-600 hover:bg-green-50 text-xl px-10 py-8 rounded-2xl shadow-2xl font-bold transition-transform active:scale-95">
-                  <Link href="#">
+                  <Link href="https://agenda-de-oradores.vercel.app/cadastro">
                     Começar a Usar Gratuitamente
                   </Link>
                 </Button>
