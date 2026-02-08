@@ -115,7 +115,7 @@ export function AppBanners() {
                               alt={app.name}
                               width={320}
                               height={180}
-                              className="object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110"
+                              className="object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110 rounded-2xl"
                             />
                           )}
                         </div>

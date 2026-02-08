@@ -110,7 +110,7 @@ export default function AgendaDeOradoresPage() {
                             animate={{ y: [0, -10, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                           >
-                            <Image src={logo.imageUrl} alt="Agenda de Oradores Logo" width={200} height={200} className="drop-shadow-2xl"/>
+                            <Image src={logo.imageUrl} alt="Agenda de Oradores Logo" width={200} height={200} className="drop-shadow-2xl rounded-2xl"/>
                           </motion.div>
                        )}
                     </div>
