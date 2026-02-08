@@ -145,7 +145,7 @@ export default function SobrePage() {
                  Se você tem uma ideia, um projeto ou apenas quer conversar sobre tecnologia, ficarei feliz em ouvir.
                </p>
                <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-7 rounded-2xl shadow-xl font-bold">
-                  <a href="mailto:contato@tonapps.com.br">
+                  <a href="mailto:tonaplicativos@gmail.com">
                     <Mail className="mr-2" /> Entrar em Contato
                   </a>
                 </Button>

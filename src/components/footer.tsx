@@ -69,13 +69,13 @@ export function Footer() {
               <Link href="#" className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white transition-all text-muted-foreground">
                 <Github className="w-5 h-5" />
               </Link>
-              <Link href="mailto:contato@tonapps.com" className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white transition-all text-muted-foreground">
+              <Link href="mailto:tonaplicativos@gmail.com" className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white transition-all text-muted-foreground">
                 <Mail className="w-5 h-5" />
               </Link>
             </div>
             <p className="text-xs text-muted-foreground">
               Dúvidas ou sugestões? <br /> 
-              <span className="font-semibold">contato@tonapps.com.br</span>
+              <span className="font-semibold">tonaplicativos@gmail.com</span>
             </p>
           </div>
         </div>

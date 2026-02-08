@@ -110,8 +110,8 @@ export default function PrivacidadePage() {
             <Section title="8. Contato">
               <p>
                 Se você tiver alguma dúvida ou sugestão sobre nossa Política de Privacidade, não hesite em nos contatar em:
-                <a href="mailto:contato@tonapps.com.br" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline ml-2">
-                  contato@tonapps.com.br
+                <a href="mailto:tonaplicativos@gmail.com" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline ml-2">
+                  tonaplicativos@gmail.com
                 </a>
               </p>
             </Section>

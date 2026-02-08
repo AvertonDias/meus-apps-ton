@@ -92,8 +92,8 @@ export default function TermosPage() {
             <Section title="7. Contato">
               <p>
                 Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco em:
-                <a href="mailto:contato@tonapps.com.br" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline ml-2">
-                  contato@tonapps.com.br
+                <a href="mailto:tonaplicativos@gmail.com" className="font-semibold text-blue-600 dark:text-blue-400 hover:underline ml-2">
+                  tonaplicativos@gmail.com
                 </a>
               </p>
             </Section>
