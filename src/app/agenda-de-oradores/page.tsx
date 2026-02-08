@@ -91,7 +91,7 @@ export default function AgendaDeOradoresPage() {
                 </p>
 
                 <div className="flex flex-wrap justify-center lg:justify-start gap-5">
-                  <PwaButton href="#" className="shadow-green-500/25 bg-green-600 hover:bg-green-500" />
+                  <PwaButton href="https://agenda-de-oradores.vercel.app/" className="shadow-green-500/25 bg-green-600 hover:bg-green-500" />
                   <PlayStoreButton href="#" />
                 </div>
               </motion.div>
