@@ -3,15 +3,12 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { PwaButton, PlayStoreButton } from '@/components/store-buttons';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { 
   Calculator, FileText, Users, Box, BarChartHorizontal, 
-  Cloud, Sparkles, CheckCircle2, TrendingUp, Smartphone
+  Cloud, CheckCircle2, TrendingUp, Smartphone
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -55,8 +52,6 @@ const features = [
 ];
 
 export default function MeuOrcamentoPage() {
-  const screenshots = PlaceHolderImages.filter((img) => img.id.startsWith('meu-orcamento-screenshot'));
-
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-slate-950">
       <main className="flex-1">
@@ -171,40 +166,6 @@ export default function MeuOrcamentoPage() {
             </div>
         </section>
         
-        {/* GALLERY COM MOCKUPS DE IPHONE */}
-        <section id="gallery" className="w-full py-24 border-y border-slate-100 dark:border-slate-800">
-             <div className="container px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight italic">O Escritório no seu Bolso</h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                        Simplicidade no campo e precisão no orçamento. Veja como é fácil gerenciar seus dados.
-                    </p>
-                </div>
-                <div className="flex items-center justify-center">
-                    <Carousel className="w-full max-w-5xl">
-                        <CarouselContent>
-                        {screenshots.map((shot) => (
-                            <CarouselItem key={shot.id} className="md:basis-1/2 lg:basis-1/3 p-4">
-                              <div className="relative group overflow-hidden rounded-[2.5rem] border-[10px] border-slate-900 shadow-2xl bg-slate-900">
-                                <Image
-                                    src={shot.imageUrl}
-                                    alt="Captura de tela"
-                                    width={400}
-                                    height={800}
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                              </div>
-                            </CarouselItem>
-                        ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex -left-12" />
-                        <CarouselNext className="hidden md:flex -right-12" />
-                    </Carousel>
-                </div>
-            </div>
-        </section>
-
         {/* CTA FINAL */}
         <section className="py-24 bg-blue-600">
           <div className="container px-4 text-center">
