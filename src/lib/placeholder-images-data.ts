@@ -1,0 +1,220 @@
+export const placeholderImagesData = {
+  "placeholderImages": [
+    {
+      "id": "creator-avatar",
+      "description": "Avatar of the creator, Wellington.",
+      "imageUrl": "/Site img/Eu.jpeg",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "Avatar of a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4Njk4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "Avatar of a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4Njk4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "Avatar of a user.",
+      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4Njk4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "banner-de-casa-em-casa",
+      "description": "Banner para o aplicativo De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/DeCasaEmCasaLLogo.png",
+      "imageHint": "moving house"
+    },
+    {
+      "id": "banner-meu-orcamento",
+      "description": "Banner para o aplicativo Meu Orçamento",
+      "imageUrl": "/MeuOrcamento/MeuOrcamentoLogo.jpg",
+      "imageHint": "finance chart"
+    },
+    {
+      "id": "banner-lista-facil",
+      "description": "Banner para o aplicativo Lista Fácil",
+      "imageUrl": "/ListaFacil/ListaFacilLogo.png",
+      "imageHint": "shopping list"
+    },
+    {
+      "id": "banner-agenda-de-oradores",
+      "description": "Banner para o aplicativo Agenda de Oradores",
+      "imageUrl": "/AgenDeOradores/Ico.jpeg",
+      "imageHint": "speaker schedule"
+    },
+    {
+      "id": "banner-coming-soon",
+      "description": "Banner de em breve",
+      "imageUrl": "https://images.unsplash.com/photo-1562575214-da9fcf59b907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY2ODU0MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "de-casa-em-casa-hero",
+      "description": "Imagem de fundo da página do aplicativo De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/DeCasaEmCasaLLogo.png",
+      "imageHint": "moving boxes"
+    },
+    {
+      "id": "meu-orcamento-hero",
+      "description": "Imagem de fundo da página do aplicativo Meu Orçamento",
+      "imageUrl": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjY3OTU1Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial planning"
+    },
+    {
+      "id": "lista-facil-hero",
+      "description": "Imagem de fundo da página do aplicativo Lista Fácil",
+      "imageUrl": "https://images.unsplash.com/photo-1601598851547-4302969d0614?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncm9jZXJ5JTIwc3RvcmV8ZW58MHx8fHwxNzY2ODEzMTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grocery store"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-1",
+      "description": "Captura de tela 1 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/01.png",
+      "imageHint": "phone screen"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-2",
+      "description": "Captura de tela 2 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/02.png",
+      "imageHint": "app interface"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-3",
+      "description": "Captura de tela 3 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/03.jpg",
+      "imageHint": "app dashboard"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-4",
+      "description": "Captura de tela 4 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/04.png",
+      "imageHint": "app features"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-5",
+      "description": "Captura de tela 5 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/05.png",
+      "imageHint": "app analytics"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-6",
+      "description": "Captura de tela 6 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/06.png",
+      "imageHint": "app settings"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-7",
+      "description": "Captura de tela 7 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/07.jpg",
+      "imageHint": "user profile"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-8",
+      "description": "Captura de tela 8 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/08.jpg",
+      "imageHint": "map view"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-9",
+      "description": "Captura de tela 9 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/09.png",
+      "imageHint": "territory list"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-10",
+      "description": "Captura de tela 10 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/10.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-11",
+      "description": "Captura de tela 11 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/11.jpg",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-12",
+      "description": "Captura de tela 12 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/12.jpg",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-13",
+      "description": "Captura de tela 13 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/13.jpg",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-14",
+      "description": "Captura de tela 14 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/14.jpg",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-15",
+      "description": "Captura de tela 15 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/15.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-16",
+      "description": "Captura de tela 16 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/16.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-17",
+      "description": "Captura de tela 17 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/17.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-18",
+      "description": "Captura de tela 18 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/18.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-19",
+      "description": "Captura de tela 19 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/19.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "de-casa-em-casa-screenshot-20",
+      "description": "Captura de tela 20 do De Casa em Casa",
+      "imageUrl": "/DeCasaEmCasa/Imagens/20.png",
+      "imageHint": "reporting tool"
+    },
+    {
+      "id": "meu-orcamento-screenshot-1",
+      "description": "Captura de tela 1 do Meu Orçamento",
+      "imageUrl": "https://images.unsplash.com/photo-1609921141835-710b7fa6e438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcHAlMjBjaGFydHxlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app chart"
+    },
+    {
+      "id": "meu-orcamento-screenshot-2",
+      "description": "Captura de tela 2 do Meu Orçamento",
+      "imageUrl": "https://images.unsplash.com/photo-1652422485224-102f6784c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcHAlMjBidWRnZXR8ZW58MHx8fHwxNzY2ODY2NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app budget"
+    },
+    {
+      "id": "lista-facil-screenshot-1",
+      "description": "Captura de tela 1 do Lista Fácil",
+      "imageUrl": "https://images.unsplash.com/photo-1611146393465-0d86247f1e3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcHAlMjBsaXN0fGVufDB8fHx8MTc2Njg2NjU4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app list"
+    },
+    {
+      "id": "lista-facil-screenshot-2",
+      "description": "Captura de tela 2 do Lista Fácil",
+      "imageUrl": "https://images.unsplash.com/photo-1601940250260-979d887883e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcHAlMjBpdGVtc3xlbnwwfHx8fDE3NjY4NjY1ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app items"
+    }
+  ]
+};
