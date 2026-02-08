@@ -35,7 +35,16 @@ const apps = [
     description: 'Crie e compartilhe listas de compras de forma inteligente. Nunca mais esqueça um item essencial no mercado.',
     imageUrlId: 'banner-lista-facil',
     href: '/lista-facil',
-    color: 'bg-[#B2E6F9]'
+    color: 'bg-[#82C6E6]'
+  },
+  {
+    id: 'agenda-de-oradores',
+    name: 'Agenda de Oradores',
+    category: 'Produtividade',
+    description: 'Gestão completa para coordenadores de oradores públicos. Organize discursos, intercâmbios e históricos.',
+    imageUrlId: 'banner-agenda-de-oradores',
+    href: '/agenda-de-oradores',
+    color: 'bg-[#4CAF50]'
   },
 ];
 
@@ -130,7 +139,7 @@ export function AppBanners() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {[1, 2, 3].map((_, i) => (
+            {[1, 2].map((_, i) => (
               <div key={i} className="p-6 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-transparent flex flex-col items-center text-center group">
                 <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Clock className="w-6 h-6 text-slate-400" />

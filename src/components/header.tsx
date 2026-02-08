@@ -33,6 +33,7 @@ export function Header() {
     { name: 'De Casa em Casa', href: '/de-casa-em-casa' },
     { name: 'Meu Orçamento', href: '/meu-orcamento' },
     { name: 'Lista Fácil', href: '/lista-facil' },
+    { name: 'Agenda de Oradores', href: '/agenda-de-oradores' },
   ];
 
   return (
