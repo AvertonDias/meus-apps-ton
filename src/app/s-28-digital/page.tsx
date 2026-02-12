@@ -118,7 +118,7 @@ export default function S28DigitalPage() {
                           animate={{ y: [0, -10, 0] }}
                           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                         >
-                          <Image src="/S28-Digital/S28-Digital-Logo.png" alt="S-28 Digital Logo" width={256} height={256} className="drop-shadow-2xl rounded-2xl"/>
+                          <Image src="/S-28Digital/S-28Digital_Logo.png" alt="S-28 Digital Logo" width={256} height={256} className="drop-shadow-2xl rounded-2xl"/>
                         </motion.div>
                     </div>
                 </div>

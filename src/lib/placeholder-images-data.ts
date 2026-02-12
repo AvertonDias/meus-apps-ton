@@ -51,7 +51,7 @@ export const placeholderImagesData = {
     {
       "id": "banner-s-28-digital",
       "description": "Banner para o aplicativo S-28 Digital",
-      "imageUrl": "/S28-Digital/S28-Digital-Logo.png",
+      "imageUrl": "/S-28Digital/S-28Digital_Logo.png",
       "imageHint": "digital checklist"
     },
     {
