@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
   ClipboardList, Calculator, BookImage, Warehouse, Users, 
-  BrainCircuit, Printer, Smartphone, CheckCircle2, BotMessageSquare
+  BrainCircuit, Printer, Devices, CheckCircle2, BotMessageSquare
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -55,7 +55,7 @@ const features = [
     color: 'bg-blue-500/10 text-blue-500'
   },
   {
-    icon: Smartphone,
+    icon: Devices,
     title: 'Web App Moderno',
     description: 'Instale na tela inicial do seu celular ou computador e use como um aplicativo nativo, com ou sem internet.',
     color: 'bg-cyan-500/10 text-cyan-500'
