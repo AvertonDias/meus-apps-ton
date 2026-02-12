@@ -57,7 +57,7 @@ const features = [
   {
     icon: Smartphone,
     title: 'Web App Moderno',
-    description: 'Instale na tela inicial do seu celular e use como um aplicativo nativo, com ou sem internet.',
+    description: 'Instale na tela inicial do seu celular ou computador e use como um aplicativo nativo, com ou sem internet.',
     color: 'bg-cyan-500/10 text-cyan-500'
   }
 ];
