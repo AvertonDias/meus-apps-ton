@@ -2,8 +2,6 @@ import Link from 'next/link';
 import { Github, Instagram, Mail, Smartphone } from 'lucide-react';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="w-full bg-white dark:bg-[#020817] border-t border-slate-200 dark:border-slate-800">
       <div className="container mx-auto px-4 py-12">
@@ -86,7 +84,7 @@ export function Footer() {
         {/* Linha Inferior */}
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground text-center md:text-left">
-            &copy; {currentYear} Ton Apps. Todos os direitos reservados.
+            &copy; 2025 Ton Apps. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 text-xs text-muted-foreground">
             <Link href="/privacidade" className="hover:text-blue-600 transition-colors">Privacidade</Link>
