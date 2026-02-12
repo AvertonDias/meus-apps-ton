@@ -34,6 +34,7 @@ export function Header() {
     { name: 'Meu Orçamento', href: '/meu-orcamento' },
     { name: 'Lista Fácil', href: '/lista-facil' },
     { name: 'Agenda de Oradores', href: '/agenda-de-oradores' },
+    { name: 'S-28 Digital', href: '/s-28-digital' },
   ];
 
   return (

@@ -49,6 +49,12 @@ export const placeholderImagesData = {
       "imageHint": "speaker schedule"
     },
     {
+      "id": "banner-s-28-digital",
+      "description": "Banner para o aplicativo S-28 Digital",
+      "imageUrl": "/S28-Digital/S28-Digital-Logo.png",
+      "imageHint": "digital checklist"
+    },
+    {
       "id": "banner-coming-soon",
       "description": "Banner de em breve",
       "imageUrl": "https://images.unsplash.com/photo-1562575214-da9fcf59b907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY2ODU0MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",

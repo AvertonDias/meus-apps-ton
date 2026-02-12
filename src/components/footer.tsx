@@ -56,6 +56,9 @@ export function Footer() {
                <li>
                 <Link href="/agenda-de-oradores" className="text-muted-foreground hover:text-blue-600 transition-colors">Agenda de Oradores</Link>
               </li>
+              <li>
+                <Link href="/s-28-digital" className="text-muted-foreground hover:text-blue-600 transition-colors">S-28 Digital</Link>
+              </li>
             </ul>
           </div>
 

@@ -46,6 +46,15 @@ const apps = [
     href: '/agenda-de-oradores',
     color: 'bg-[#4CAF50]'
   },
+  {
+    id: 's-28-digital',
+    name: 'S-28 Digital',
+    category: 'Organização',
+    description: 'A solução definitiva para organizar o estoque de publicações da sua congregação com modernidade e precisão.',
+    imageUrlId: 'banner-s-28-digital',
+    href: '/s-28-digital',
+    color: 'bg-[#5A67D8]'
+  },
 ];
 
 export function AppBanners() {
