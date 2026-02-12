@@ -27,7 +27,7 @@ const features = [
   { 
     icon: BookImage, 
     title: 'Capas Oficiais',
-    description: 'Visualize a capa da revista ou livro ao clicar no nome para fácil identificação.',
+    description: 'Visualize a capa da publicações ao clicar no nome para fácil identificação.',
     color: 'bg-violet-500/10 text-violet-500'
   },
   { 
