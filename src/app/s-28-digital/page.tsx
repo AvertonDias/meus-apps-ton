@@ -100,7 +100,7 @@ export default function S28DigitalPage() {
                 </p>
 
                 <div className="flex flex-wrap justify-center lg:justify-start gap-5">
-                  <PwaButton href="#" className="shadow-indigo-500/25 bg-indigo-600 hover:bg-indigo-500" />
+                  <PwaButton href="https://s-28-digital.vercel.app/" className="shadow-indigo-500/25 bg-indigo-600 hover:bg-indigo-500" />
                   <PlayStoreButton href="#" />
                 </div>
               </motion.div>
@@ -173,7 +173,7 @@ export default function S28DigitalPage() {
              </p>
              <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <Button size="lg" asChild className="bg-white text-indigo-600 hover:bg-indigo-50 text-xl px-10 py-8 rounded-2xl shadow-2xl font-bold transition-transform active:scale-95">
-                  <Link href="#" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://s-28-digital.vercel.app/" target="_blank" rel="noopener noreferrer">
                     Experimente Agora
                   </Link>
                 </Button>
