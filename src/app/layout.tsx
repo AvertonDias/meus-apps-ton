@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'Ton Apps',
     images: [
       {
-        url: '/favicon.svg',
+        url: '/icon.png',
         alt: 'Ton Apps Logo',
       },
     ],
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Ton Apps',
     description: 'Simplifique sua rotina com nossos apps.',
-    images: ['/favicon.svg'],
+    images: ['/icon.png'],
   },
   icons: {
-    icon: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: '/icon.png',
+    apple: '/icon.png',
   },
 };
 
